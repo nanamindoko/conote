@@ -4,15 +4,15 @@
 
 Repository for CS473-Introduction to Social Computing project
 
-## How to run Server
-1. `cd server && npm install`
-2. `npm start`
-
 ## Environments
 - Node 12.13.0 LTS
 - npm 6.12.0
 - Express.js
 - React.js
+
+## How to run Server
+1. `cd server && npm install`
+2. `npm start`
 
 ## Todos
 Please add!!
@@ -21,11 +21,17 @@ Please add!!
 React.js as a clientside framework
 
 #### Pages
-- Home
-- Course lists
+- Title
+- home
+- Course Note page
+- Lecture page
+- Student Note page
+- My Note page
+- My note revision
+- My feedback
 - Note-taking page
-- Feedback page
-- Outline revising page
+- Note revision
+- Master note revision
 
 ### Server
 Use Express.js as a serverside framework
