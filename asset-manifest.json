@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/conote/static/css/main.4ed3ade8.chunk.css",
-    "main.js": "/conote/static/js/main.ee7a81f6.chunk.js",
-    "main.js.map": "/conote/static/js/main.ee7a81f6.chunk.js.map",
+    "main.css": "/conote/static/css/main.94ceef96.chunk.css",
+    "main.js": "/conote/static/js/main.02496110.chunk.js",
+    "main.js.map": "/conote/static/js/main.02496110.chunk.js.map",
     "runtime-main.js": "/conote/static/js/runtime-main.b52fd772.js",
     "runtime-main.js.map": "/conote/static/js/runtime-main.b52fd772.js.map",
     "static/js/2.0766822b.chunk.js": "/conote/static/js/2.0766822b.chunk.js",
     "static/js/2.0766822b.chunk.js.map": "/conote/static/js/2.0766822b.chunk.js.map",
     "index.html": "/conote/index.html",
-    "precache-manifest.f38902b8ed2491e7d154fc6d0db85bfd.js": "/conote/precache-manifest.f38902b8ed2491e7d154fc6d0db85bfd.js",
+    "precache-manifest.90812d897c5d89f05cfad9dadf06a3a0.js": "/conote/precache-manifest.90812d897c5d89f05cfad9dadf06a3a0.js",
     "service-worker.js": "/conote/service-worker.js",
-    "static/css/main.4ed3ade8.chunk.css.map": "/conote/static/css/main.4ed3ade8.chunk.css.map"
+    "static/css/main.94ceef96.chunk.css.map": "/conote/static/css/main.94ceef96.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b52fd772.js",
     "static/js/2.0766822b.chunk.js",
-    "static/css/main.4ed3ade8.chunk.css",
-    "static/js/main.ee7a81f6.chunk.js"
+    "static/css/main.94ceef96.chunk.css",
+    "static/js/main.02496110.chunk.js"
   ]
 }
