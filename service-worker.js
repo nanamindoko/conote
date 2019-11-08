@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/conote/precache-manifest.779fd52ecfad890d6d4c0c364d7c364b.js"
+  "/conote/precache-manifest.4b28be8279e98d33c63938aece19bc3a.js"
 );
 
 self.addEventListener('message', (event) => {

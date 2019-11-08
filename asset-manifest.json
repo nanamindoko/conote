@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/conote/static/css/main.b100e6da.chunk.css",
-    "main.js": "/conote/static/js/main.f4263ff4.chunk.js",
-    "main.js.map": "/conote/static/js/main.f4263ff4.chunk.js.map",
+    "main.css": "/conote/static/css/main.4ed3ade8.chunk.css",
+    "main.js": "/conote/static/js/main.0d88000a.chunk.js",
+    "main.js.map": "/conote/static/js/main.0d88000a.chunk.js.map",
     "runtime-main.js": "/conote/static/js/runtime-main.b52fd772.js",
     "runtime-main.js.map": "/conote/static/js/runtime-main.b52fd772.js.map",
-    "static/js/2.e0bf0064.chunk.js": "/conote/static/js/2.e0bf0064.chunk.js",
-    "static/js/2.e0bf0064.chunk.js.map": "/conote/static/js/2.e0bf0064.chunk.js.map",
+    "static/js/2.a950ce0d.chunk.js": "/conote/static/js/2.a950ce0d.chunk.js",
+    "static/js/2.a950ce0d.chunk.js.map": "/conote/static/js/2.a950ce0d.chunk.js.map",
     "index.html": "/conote/index.html",
-    "precache-manifest.779fd52ecfad890d6d4c0c364d7c364b.js": "/conote/precache-manifest.779fd52ecfad890d6d4c0c364d7c364b.js",
+    "precache-manifest.4b28be8279e98d33c63938aece19bc3a.js": "/conote/precache-manifest.4b28be8279e98d33c63938aece19bc3a.js",
     "service-worker.js": "/conote/service-worker.js",
-    "static/css/main.b100e6da.chunk.css.map": "/conote/static/css/main.b100e6da.chunk.css.map"
+    "static/css/main.4ed3ade8.chunk.css.map": "/conote/static/css/main.4ed3ade8.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b52fd772.js",
-    "static/js/2.e0bf0064.chunk.js",
-    "static/css/main.b100e6da.chunk.css",
-    "static/js/main.f4263ff4.chunk.js"
+    "static/js/2.a950ce0d.chunk.js",
+    "static/css/main.4ed3ade8.chunk.css",
+    "static/js/main.0d88000a.chunk.js"
   ]
 }
