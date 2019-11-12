@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './NoteTaking.css'
 import Editor from '@stfy/react-editor.js'
 import { EDITOR_JS_TOOLS } from './editor-tools'
 
