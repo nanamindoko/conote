@@ -33,13 +33,16 @@ React.js as a clientside framework
 - Note revision
 - Master note revision
 
+
 ### Server
 Use Express.js as a serverside framework
-- Link Client(React) - Server(Express) - DB(Mongo)
+- Link Client(React) - Server(Express)~~- DB(Mongo)~~
+- Routing
 
 
-### Database
-MongoDB
+~~### Database~~
+~~MongoDB~~
+Use filesystem instead of using DB, no time for development
 
 
 
