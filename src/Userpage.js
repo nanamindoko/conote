@@ -2,6 +2,7 @@ import React from 'react'
 import './Userpage.css'
 import Editor from '@stfy/react-editor.js'
 import { EDITOR_JS_TOOLS } from './editor-tools'
+import ReactDOM from "react-dom";
 
 function Userpage() {
   return (
@@ -58,6 +59,8 @@ function Userpage() {
     </div>
   )
 }
+
+ReactDOM.render(Userpage(), document.getElementById('userpage'));
 
 export default Userpage
 
