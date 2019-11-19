@@ -21,7 +21,10 @@
     "@editorjs/warning": "^1.1.1",
     "@stfy/react-editor.js": "^1.0.3",
     "jquery": "^3.4.1",
-    "popper.js": "^1.16.0"
+    "popper.js": "^1.16.0",
+    "react-router-dom": "^5.1.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
     "react": "^16.11.0",

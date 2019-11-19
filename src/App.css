@@ -22,28 +22,28 @@
 }
 
 .Editor {
-  background-color: rgb(230, 214, 219);
+  /* background-color: rgb(230, 214, 219); */
   text-align: justify;
   width: 45%;
   margin: 10px;
   float: right;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
-.Notes {
-  background-color: aliceblue;
+.Courses {
+  /* background-color: aliceblue; */
   text-align: justify;
   width: 45%;
   margin: 10px;
   float: left;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
-.Notes > ul {
+.Courses > ul {
   text-decoration: none;
   list-style: none;
 }
-.Notes > ul > li {
+.Courses > ul > li {
   margin: 5px;
   padding: 5px;
   border: 3px solid aliceblue;

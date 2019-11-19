@@ -10,7 +10,7 @@
   width: 45%;
   margin: 10px;
   float: left;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .Editor {
@@ -19,5 +19,5 @@
   width: 45%;
   margin: 10px;
   float: right;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
