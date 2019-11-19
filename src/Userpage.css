@@ -21,19 +21,10 @@
   color: #09d3ac;
 }
 
-.MyFeedback {
-  background-color: rgb(230, 214, 219);
-  text-align: justify;
-  width: 45%;
-  margin: 10px;
-  float: right;
-  border: 2px solid red;
-}
-
 .MyNotes {
   background-color: aliceblue;
   text-align: justify;
-  width: 45%;
+  width: 90%;
   margin: 10px;
   float: left;
   border: 2px solid blue;

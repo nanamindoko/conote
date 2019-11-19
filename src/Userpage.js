@@ -15,44 +15,22 @@ function Userpage() {
       <div className='MyNotes'>
         <ul>
           <li>
-            <h3>My Note</h3>
+            <h3>My Note 1</h3>
           </li>
           <li>
-            <h3>My Note</h3>
+            <h3>My Note 2</h3>
           </li>
           <li>
-            <h3>My Note</h3>
+            <h3>My Note 3</h3>
           </li>
           <li>
-            <h3>My Note</h3>
+            <h3>My Note 4</h3>
           </li>
           <li>
-            <h3>My Note</h3>
+            <h3>My Note 5</h3>
           </li>
           <li>
-            <h3>My Note</h3>
-          </li>
-        </ul>
-      </div>
-      <div className='MyFeedback'>
-        <ul>
-          <li>
-            <h3>My Feedback</h3>
-          </li>
-          <li>
-            <h3>My Feedback</h3>
-          </li>
-          <li>
-            <h3>My Feedback</h3>
-          </li>
-          <li>
-            <h3>My Feedback</h3>
-          </li>
-          <li>
-            <h3>My Feedback</h3>
-          </li>
-          <li>
-            <h3>My Feedback</h3>
+            <h3>My Note 6</h3>
           </li>
         </ul>
       </div>
