@@ -10,6 +10,32 @@ Repository for CS473-Introduction to Social Computing project
 - Express.js
 - React.js
 
+### Client
+React.js as a clientside framework
+
+### Server
+Use Express.js as a serverside framework
+- Link Client(React) - Server(Express)~~- DB(Mongo)~~
+- Routing
+
+~~### Database~~
+~~MongoDB~~
+Use filesystem instead of using DB, no time for development
+
+## Descriptions
+ - src
+ -- blahblah
+ - public
+ -- blahblah
+
+#### Pages
+- Home
+- Course page
+- Course Note page
+- My Note page
+- My feedback
+- Note-taking page
+
 ## How to run Server
 1. `cd server && npm install`
 2. `npm start`
@@ -17,38 +43,8 @@ Repository for CS473-Introduction to Social Computing project
 ## Todos
 Please add!!
 
-### Client
-React.js as a clientside framework
-
-#### Pages
-- Title
-- home
-- Course Note page
-- Lecture page
-- Student Note page
-- My Note page
-- My note revision
-- My feedback
-- Note-taking page
-- Note revision
-- Master note revision
-
-
-### Server
-Use Express.js as a serverside framework
-- Link Client(React) - Server(Express)~~- DB(Mongo)~~
-- Routing
-
-
-~~### Database~~
-~~MongoDB~~
-Use filesystem instead of using DB, no time for development
-
-
-
 ## Authors
 - Dorjnyam T.
 - Sangwoo Kim
 - Jiwoong Na
 - Jinyoung Sung
-
