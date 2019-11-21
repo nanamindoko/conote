@@ -8,9 +8,9 @@ export function Course() {
     <div className="Courses">
       <h1> Course ID: {id}</h1>
       <Card.Group>
-        <Card as={Link} to="/note/1" fluid color="red" header="Note 1" />
-        <Card as={Link} to="/note/2" fluid color="orange" header="Note 2" />
-        <Card as={Link} to="/note/3" fluid color="yellow" header="Note 3" />
+        <Card as={Link} to="/note/1" fluid color="red" header="Note 1 by John" />
+        <Card as={Link} to="/note/2" fluid color="orange" header="Note 2 by John" />
+        <Card as={Link} to="/note/3" fluid color="yellow" header="Note 3 by Paul" />
       </Card.Group>
     </div>
   );
