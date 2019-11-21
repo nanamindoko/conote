@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/nanamindoko/conote/static/css/main.dda93e47.chunk.css",
-    "main.js": "/nanamindoko/conote/static/js/main.38f07957.chunk.js",
-    "main.js.map": "/nanamindoko/conote/static/js/main.38f07957.chunk.js.map",
-    "runtime-main.js": "/nanamindoko/conote/static/js/runtime-main.b98e3148.js",
-    "runtime-main.js.map": "/nanamindoko/conote/static/js/runtime-main.b98e3148.js.map",
-    "static/css/2.0c1dc798.chunk.css": "/nanamindoko/conote/static/css/2.0c1dc798.chunk.css",
-    "static/js/2.02240064.chunk.js": "/nanamindoko/conote/static/js/2.02240064.chunk.js",
-    "static/js/2.02240064.chunk.js.map": "/nanamindoko/conote/static/js/2.02240064.chunk.js.map",
-    "index.html": "/nanamindoko/conote/index.html",
-    "precache-manifest.a0d89b95a9eed705d2502d0741c8f9b8.js": "/nanamindoko/conote/precache-manifest.a0d89b95a9eed705d2502d0741c8f9b8.js",
-    "service-worker.js": "/nanamindoko/conote/service-worker.js",
-    "static/css/2.0c1dc798.chunk.css.map": "/nanamindoko/conote/static/css/2.0c1dc798.chunk.css.map",
-    "static/css/main.dda93e47.chunk.css.map": "/nanamindoko/conote/static/css/main.dda93e47.chunk.css.map",
-    "static/media/semantic.min.css": "/nanamindoko/conote/static/media/outline-icons.ef60a4f6.woff"
+    "main.css": "/conote/static/css/main.dda93e47.chunk.css",
+    "main.js": "/conote/static/js/main.da294806.chunk.js",
+    "main.js.map": "/conote/static/js/main.da294806.chunk.js.map",
+    "runtime-main.js": "/conote/static/js/runtime-main.b446ef8f.js",
+    "runtime-main.js.map": "/conote/static/js/runtime-main.b446ef8f.js.map",
+    "static/css/2.cf18f514.chunk.css": "/conote/static/css/2.cf18f514.chunk.css",
+    "static/js/2.02240064.chunk.js": "/conote/static/js/2.02240064.chunk.js",
+    "static/js/2.02240064.chunk.js.map": "/conote/static/js/2.02240064.chunk.js.map",
+    "index.html": "/conote/index.html",
+    "precache-manifest.6383207252827b19955447ce77d41da3.js": "/conote/precache-manifest.6383207252827b19955447ce77d41da3.js",
+    "service-worker.js": "/conote/service-worker.js",
+    "static/css/2.cf18f514.chunk.css.map": "/conote/static/css/2.cf18f514.chunk.css.map",
+    "static/css/main.dda93e47.chunk.css.map": "/conote/static/css/main.dda93e47.chunk.css.map",
+    "static/media/semantic.min.css": "/conote/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b98e3148.js",
-    "static/css/2.0c1dc798.chunk.css",
+    "static/js/runtime-main.b446ef8f.js",
+    "static/css/2.cf18f514.chunk.css",
     "static/js/2.02240064.chunk.js",
     "static/css/main.dda93e47.chunk.css",
-    "static/js/main.38f07957.chunk.js"
+    "static/js/main.da294806.chunk.js"
   ]
 }
