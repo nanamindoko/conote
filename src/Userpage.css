@@ -1,0 +1,41 @@
+.Userpage {
+  text-align: center;
+}
+
+.Userpage-logo {
+  height: 40vmin;
+}
+
+.Userpage-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Userpage-link {
+  color: #09d3ac;
+}
+
+.MyNotes {
+  background-color: aliceblue;
+  text-align: justify;
+  width: 90%;
+  margin: 10px;
+  float: left;
+  border: 2px solid blue;
+}
+
+.MyNotes > ul {
+  text-decoration: none;
+  list-style: none;
+}
+.MyNotes > ul > li {
+  margin: 5px;
+  padding: 5px;
+  border: 3px solid aliceblue;
+}
