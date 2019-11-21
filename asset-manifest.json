@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/conote/static/css/main.94ceef96.chunk.css",
-    "main.js": "/conote/static/js/main.02496110.chunk.js",
-    "main.js.map": "/conote/static/js/main.02496110.chunk.js.map",
-    "runtime-main.js": "/conote/static/js/runtime-main.b52fd772.js",
-    "runtime-main.js.map": "/conote/static/js/runtime-main.b52fd772.js.map",
-    "static/js/2.0766822b.chunk.js": "/conote/static/js/2.0766822b.chunk.js",
-    "static/js/2.0766822b.chunk.js.map": "/conote/static/js/2.0766822b.chunk.js.map",
-    "index.html": "/conote/index.html",
-    "precache-manifest.90812d897c5d89f05cfad9dadf06a3a0.js": "/conote/precache-manifest.90812d897c5d89f05cfad9dadf06a3a0.js",
-    "service-worker.js": "/conote/service-worker.js",
-    "static/css/main.94ceef96.chunk.css.map": "/conote/static/css/main.94ceef96.chunk.css.map"
+    "main.css": "/nanamindoko/conote/static/css/main.dda93e47.chunk.css",
+    "main.js": "/nanamindoko/conote/static/js/main.38f07957.chunk.js",
+    "main.js.map": "/nanamindoko/conote/static/js/main.38f07957.chunk.js.map",
+    "runtime-main.js": "/nanamindoko/conote/static/js/runtime-main.b98e3148.js",
+    "runtime-main.js.map": "/nanamindoko/conote/static/js/runtime-main.b98e3148.js.map",
+    "static/css/2.0c1dc798.chunk.css": "/nanamindoko/conote/static/css/2.0c1dc798.chunk.css",
+    "static/js/2.02240064.chunk.js": "/nanamindoko/conote/static/js/2.02240064.chunk.js",
+    "static/js/2.02240064.chunk.js.map": "/nanamindoko/conote/static/js/2.02240064.chunk.js.map",
+    "index.html": "/nanamindoko/conote/index.html",
+    "precache-manifest.a0d89b95a9eed705d2502d0741c8f9b8.js": "/nanamindoko/conote/precache-manifest.a0d89b95a9eed705d2502d0741c8f9b8.js",
+    "service-worker.js": "/nanamindoko/conote/service-worker.js",
+    "static/css/2.0c1dc798.chunk.css.map": "/nanamindoko/conote/static/css/2.0c1dc798.chunk.css.map",
+    "static/css/main.dda93e47.chunk.css.map": "/nanamindoko/conote/static/css/main.dda93e47.chunk.css.map",
+    "static/media/semantic.min.css": "/nanamindoko/conote/static/media/outline-icons.ef60a4f6.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.b52fd772.js",
-    "static/js/2.0766822b.chunk.js",
-    "static/css/main.94ceef96.chunk.css",
-    "static/js/main.02496110.chunk.js"
+    "static/js/runtime-main.b98e3148.js",
+    "static/css/2.0c1dc798.chunk.css",
+    "static/js/2.02240064.chunk.js",
+    "static/css/main.dda93e47.chunk.css",
+    "static/js/main.38f07957.chunk.js"
   ]
 }
