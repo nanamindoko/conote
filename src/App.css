@@ -22,29 +22,46 @@
 }
 
 .Editor {
-  background-color: rgb(230, 214, 219);
-  text-align: justify;
-  width: 45%;
-  margin: 10px;
-  float: right;
-  border: 2px solid red;
-}
-
-.Notes {
-  background-color: aliceblue;
+  /* background-color: rgb(230, 214, 219); */
   text-align: justify;
   width: 45%;
   margin: 10px;
   float: left;
-  border: 2px solid blue;
+  /* border: 2px solid red; */
 }
 
-.Notes > ul {
+.Courses {
+  /* background-color: aliceblue; */
+  text-align: justify;
+  width: 45%;
+  margin: 10px;
+  float: left;
+  /* border: 2px solid blue; */
+}
+
+.Courses > ul {
   text-decoration: none;
   list-style: none;
 }
-.Notes > ul > li {
+.Courses > ul > li {
   margin: 5px;
   padding: 5px;
   border: 3px solid aliceblue;
+}
+
+.Note {
+  text-align: justify;
+  width: 50%;
+  margin: 10px;
+  float: left;
+  border: 2px solid red;
+}
+
+.Feedback {
+  text-align: justify;
+  padding: 10px;
+  width: 35%;
+  margin: 10px;
+  float: right;
+  border: 2px solid blue;
 }
