@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Card } from "semantic-ui-react";
-import { Course } from "./Course";
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,9 +27,9 @@ export function Home() {
       </div>
       <div className="Courses">
         <Card.Group>
-          <Card fluid color="red" header="Note A" />
-          <Card fluid color="orange" header="Note B" />
-          <Card fluid color="yellow" header="Note C" />
+          <Card as={Link} to="/note/1" fluid color="red" header="Note A" />
+          <Card as={Link} to="/note/2" fluid color="orange" header="Note B" />
+          <Card as={Link} to="/note/3" fluid color="yellow" header="Note C" />
         </Card.Group>
         <Button>Add note</Button>
       </div>
@@ -38,4 +37,4 @@ export function Home() {
   );
 }
 
-export default Home
+export default Home;

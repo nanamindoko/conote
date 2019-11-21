@@ -4,14 +4,8 @@ import "semantic-ui-css/semantic.min.css";
 import { Navbar } from "./components/layout/Navbar";
 import { Home } from "./components/Home";
 import { Course } from "./components/Course";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-  // useRouteMatch,
-  // useParams
-} from "react-router-dom";
+import { Note } from "./components/Note";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -25,6 +19,9 @@ function App() {
         </Route>
         <Route path="/course/:id">
           <Course />
+        </Route>
+        <Route path="/note/:id">
+          <Note />
         </Route>
       </Switch>
     </Router>
