@@ -27,6 +27,7 @@
     "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
@@ -35,7 +36,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -61,5 +64,5 @@
   "bugs": {
     "url": "https://github.com/nanamindoko/conote/issues"
   },
-  "homepage": "https://github.com/nanamindoko/conote#readme"
+  "homepage": "https://nanamindoko.github.io/conote"
 }

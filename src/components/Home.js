@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "semantic-ui-react";
+import { Button, Card, Icon } from "semantic-ui-react";
 import {
   BrowserRouter as Router,
   Switch,

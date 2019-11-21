@@ -49,9 +49,19 @@
   border: 3px solid aliceblue;
 }
 
+.Note {
+  text-align: justify;
+  width: 50%;
+  margin: 10px;
+  float: left;
+  border: 2px solid red;
+}
+
 .Feedback {
   text-align: justify;
-  width: 45%;
+  padding: 10px;
+  width: 35%;
   margin: 10px;
   float: right;
+  border: 2px solid blue;
 }

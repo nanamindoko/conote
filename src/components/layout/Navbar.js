@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export class Navbar extends Component {
   state = {};
@@ -15,8 +13,8 @@ export class Navbar extends Component {
     return (
       <Menu>
         <Menu.Item
-          name="editorials"
-          active={activeItem === "editorials"}
+          name="mypage"
+          active={activeItem === "mypage"}
           onClick={this.handleItemClick}
           as={Link}
           to="/"
@@ -24,17 +22,17 @@ export class Navbar extends Component {
           My Page
         </Menu.Item>
 
-        <Menu.Item
+        {/* <Menu.Item
           name="reviews"
           active={activeItem === "reviews"}
           onClick={this.handleItemClick}
         >
           Courses
-        </Menu.Item>
+        </Menu.Item> */}
         <Menu.Menu position="right">
           <Menu.Item
-            name="upcomingEvents"
-            active={activeItem === "upcomingEvents"}
+            name="mypage"
+            active={activeItem === "mypage"}
             onClick={this.handleItemClick}
           >
             Sign In
