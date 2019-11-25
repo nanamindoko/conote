@@ -15,20 +15,28 @@ React.js as a clientside framework
 
 ### Server
 Use Express.js as a serverside framework
-- Link Client(React) - Server(Express)~~- DB(Mongo)~~
+- Link Client(React) - Server(Express) - DB(Mongo)
 - Routing
 
-~~### Database~~
-~~MongoDB~~
-Use filesystem instead of using DB, no time for development
+### Database
+MongoDB
 
 ## Descriptions
 
 ### Codes
- - src
- -- blahblah
- - public
- -- blahblah
+
+#### logo
+
+It contains a single file of logo of Conote.
+
+#### public
+
+It contains 'index.html', which is the index page of Conote. It also conatins 'Bootstrap' files in 'css' and 'js' folder.
+
+#### src
+
+It contains 'index.js' and 'index.css'. This loads 'App.js' and 'App.css', which is the router of Conote. In '/components', javascript code of each page('Course.js', 'Home.js', 'Note.js','Notetaking.js') exists.
+
 
 ### Pages
 - Home
@@ -41,9 +49,6 @@ Use filesystem instead of using DB, no time for development
 ## How to run Server
 1. `cd server && npm install`
 2. `npm start`
-
-## Todos
-Please add!!
 
 ## Authors
 - Dorjnyam T.
