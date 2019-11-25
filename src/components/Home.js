@@ -1,40 +1,78 @@
 import React from "react";
-import { Button, Card, Icon } from "semantic-ui-react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-  // useRouteMatch,
-  // useParams
-} from "react-router-dom";
-export function Home() {
-  return (
-    <div className="courselist">
-      <div className="Courses">
-        <Card.Group>
-          <Card as={Link} to="/course/1" fluid color="red" header="Course A" />
-          <Card
-            as={Link}
-            to="/course/2"
-            fluid
-            color="orange"
-            header="Course B"
-          />
-          <Card as={Link} to="/course/3" fluid color="blue" header="Course C" />
-        </Card.Group>
-        <Button>Add course</Button>
+import { Button, Card, Header, Label } from "semantic-ui-react";
+import { Link } from "react-router-dom";
+import firebase from "../firebase";
+
+export class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      courses: [],
+      notes: []
+    };
+  }
+  componentDidMount() {
+    const courses = [];
+    const db = firebase.firestore();
+    db.collection("courses")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(function(doc) {
+          courses.push(doc.data());
+        });
+        this.setState({ courses: courses });
+      });
+  }
+  render() {
+    const courses = this.state.courses;
+    return (
+      <div className="courselist">
+        <div className="Courses">
+          <Header as="h1">My Courses</Header>
+          <Card.Group>
+            {courses.map(course => (
+              <>
+                <Card
+                  key={course.id}
+                  as={Link}
+                  to={`/course/${course.id}`}
+                  fluid
+                  color="red"
+                  header={`${course.name}`}
+                  description={
+                    <Label color="blue">
+                      2019/11/20
+                      <Label.Detail>Notes updated</Label.Detail>
+                    </Label>
+                  }
+                ></Card>
+              </>
+            ))}
+          </Card.Group>
+        </div>
+        <div className="Notes">
+          <Header as="h1">My Notes</Header>
+          <Card.Group>
+            <Card
+              as={Link}
+              to="/note/1"
+              fluid
+              color="red"
+              header="Note A"
+              description={
+                <Label color="orange">
+                  2019/11/20
+                  <Label.Detail>Feedbacks received</Label.Detail>
+                </Label>
+              }
+            />
+            <Card as={Link} to="/note/2" fluid color="orange" header="Note B" />
+            <Card as={Link} to="/note/3" fluid color="yellow" header="Note C" />
+          </Card.Group>
+        </div>
       </div>
-      <div className="Courses">
-        <Card.Group>
-          <Card as={Link} to="/note/1" fluid color="red" header="Note A" />
-          <Card as={Link} to="/note/2" fluid color="orange" header="Note B" />
-          <Card as={Link} to="/note/3" fluid color="yellow" header="Note C" />
-        </Card.Group>
-        <Button>Add note</Button>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Home;
