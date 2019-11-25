@@ -6,34 +6,9 @@ import firebase from "../firebase";
 export class Home extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      courses: [],
-      notes: []
-    };
-  }
-  componentDidMount() {
-    const courses = [];
-    const notes = [];
-    const db = firebase.firestore();
-    db.collection("courses")
-      .get()
-      .then(querySnapshot => {
-        querySnapshot.forEach(function(doc) {
-          courses.push(doc.data());
-        });
-        this.setState({ courses: courses });
-      });
-    db.collection("notes")
-      .get()
-      .then(querySnapshot => {
-        querySnapshot.forEach(function(doc) {
-          notes.push(doc.data());
-        });
-        this.setState({ notes: notes });
-      });
   }
   render() {
-    const courses = this.state.courses;
+    const courses = this.props.courses;
     return (
       <div className="courselist">
         <div className="Courses">

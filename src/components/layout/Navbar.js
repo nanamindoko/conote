@@ -9,7 +9,6 @@ export class Navbar extends Component {
 
   render() {
     const { activeItem } = this.state;
-    const { user, signOut, signInWithGoogle } = this.props;
 
     return (
       <Menu>

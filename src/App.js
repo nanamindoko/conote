@@ -7,8 +7,37 @@ import { Course } from "./components/Course";
 import { Note } from "./components/Note";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { WriteNote } from "./components/WriteNote";
+import firebase from "./firebase";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      courses: [],
+      notes: []
+    };
+  }
+  componentDidMount() {
+    const courses = [];
+    const notes = [];
+    const db = firebase.firestore();
+    db.collection("courses")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(function(doc) {
+          courses.push(doc.data());
+        });
+        this.setState({ courses: courses });
+      });
+    db.collection("notes")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(function(doc) {
+          notes.push(doc.data());
+        });
+        this.setState({ notes: notes });
+      });
+  }
   render() {
     return (
       <Router>
@@ -16,18 +45,20 @@ class App extends Component {
           <Navbar {...this.props} />
         </div>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route
+            exact
+            path="/"
+            render={props => (
+              <Home courses={this.state.courses} {...props} {...this.state} />
+            )}
+          />
           <Route path="/course/:id">
-            <Course />
+            <Course {...this.state} />
           </Route>
           <Route path="/note/:id">
             <Note />
           </Route>
-          <Route path="/write/:id">
-            <WriteNote />
-          </Route>
+          <Route path="/write/:id" component={WriteNote} />
         </Switch>
       </Router>
     );
