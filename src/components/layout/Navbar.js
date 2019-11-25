@@ -9,6 +9,7 @@ export class Navbar extends Component {
 
   render() {
     const { activeItem } = this.state;
+    const { user, signOut, signInWithGoogle } = this.props;
 
     return (
       <Menu>
@@ -21,14 +22,6 @@ export class Navbar extends Component {
         >
           My Page
         </Menu.Item>
-
-        {/* <Menu.Item
-          name="reviews"
-          active={activeItem === "reviews"}
-          onClick={this.handleItemClick}
-        >
-          Courses
-        </Menu.Item> */}
         <Menu.Menu position="right">
           <Menu.Item
             name="mypage"
