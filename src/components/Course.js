@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Card } from "semantic-ui-react";
 import firebase from "../firebase";
+import { Button, Header, Rating } from "semantic-ui-react";
 
 export function Course() {
   const [courses, setCourses] = useState(0);
@@ -24,6 +25,12 @@ export function Course() {
         <Card as={Link} to="/note/2" fluid color="orange" header="Note 2 by John" />
         <Card as={Link} to="/note/3" fluid color="yellow" header="Note 3 by Paul" />
       </Card.Group>
+      <div>
+          <Button
+            attached="bottom"
+            content="Add Note"
+          />
+        </div>
     </div>
   );
 }
