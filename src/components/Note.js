@@ -7,14 +7,13 @@ import { Header } from "semantic-ui-react";
 
 export function Note() {
   let { id } = useParams();
+
   return (
     <div>
       <div className="Note">
         <Header as="h1">Student Note</Header>
         <Editor
           tools={EDITOR_JS_TOOLS}
-          //   onReady={() => console.log("Start Editor 1!")}
-          //   onData={e => console.log("data", e)}
           data={{
             time: 1569611146631,
             blocks: [

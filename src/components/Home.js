@@ -13,6 +13,7 @@ export class Home extends React.Component {
   }
   componentDidMount() {
     const courses = [];
+    const notes = [];
     const db = firebase.firestore();
     db.collection("courses")
       .get()
@@ -21,6 +22,14 @@ export class Home extends React.Component {
           courses.push(doc.data());
         });
         this.setState({ courses: courses });
+      });
+    db.collection("notes")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(function(doc) {
+          notes.push(doc.data());
+        });
+        this.setState({ notes: notes });
       });
   }
   render() {

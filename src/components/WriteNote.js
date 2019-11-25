@@ -4,7 +4,7 @@ import { EDITOR_JS_TOOLS } from "../editor-tools";
 import { Button, Header, Rating } from "semantic-ui-react";
 import firebase from "../firebase";
 
-export class WriteFeedback extends Component {
+export class WriteNote extends Component {
   state = {
     noteId: this.props.id
   };
@@ -14,13 +14,14 @@ export class WriteFeedback extends Component {
   render() {
     const db = firebase.firestore();
     const data = this.state.data;
+    const id = this.state.noteId;
     return (
-      <div className="Feedback">
-        <Header as="h1">Write a Feedback</Header>
+      <div className="">
+        <Header as="h1">Write a Note</Header>
 
         <Editor
           tools={EDITOR_JS_TOOLS}
-          onReady={() => console.log("Start Editor 2!")}
+          onReady={() => console.log("Start Editor 1!")}
           onData={this.handleData}
           data={{
             time: 1569611146631,
@@ -35,25 +36,18 @@ export class WriteFeedback extends Component {
             version: "2.15.0"
           }}
         />
-        <Header as="h1">Rate this note!</Header>
-        <Rating
-          icon="star"
-          size="huge"
-          defaultRating={3}
-          maxRating={5}
-          onRate={this.handleRate}
-        />
+
         <div>
           <Button
             attached="bottom"
             content="Submit"
             onClick={() =>
               db
-                .collection("feedbacks")
+                .collection("notes")
                 .add({
                   id: 1,
-                  data: data,
-                  rating: this.state.rating
+                  name: `Lecture ${1}`,
+                  data: data
                 })
                 .then(function(docRef) {
                   console.log("Document written with ID: ", docRef.id);
@@ -69,4 +63,4 @@ export class WriteFeedback extends Component {
   }
 }
 
-export default WriteFeedback;
+export default WriteNote;

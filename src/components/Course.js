@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Card } from "semantic-ui-react";
+import { Card, Button } from "semantic-ui-react";
 import firebase from "../firebase";
 
 export function Course() {
-  const [courses, setCourses] = useState(0);
+  // const [courses, setCourses] = useState(0);
   const { id } = useParams();
-  // const db = firebase.firestore();
-  // // db.collection("courses")
-  // //   .get()
-  // //   .then(querySnapshot => {
-  // //     querySnapshot.forEach(function(doc) {
-  // //       courses.push(doc.data());
-  // //     });
-  // //     this.setCourses({ courses: courses });
-  // //   });
-  // // console.log(courses);
+
   return (
     <div className="Courses">
       <h1>{id}</h1>
@@ -24,6 +15,9 @@ export function Course() {
         <Card as={Link} to="/note/2" fluid color="orange" header="Note 2" />
         <Card as={Link} to="/note/3" fluid color="yellow" header="Note 3" />
       </Card.Group>
+      <Button as={Link} to={`/write/${id}`} attached="bottom">
+        Write a note
+      </Button>
     </div>
   );
 }

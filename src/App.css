@@ -63,7 +63,8 @@
   margin: 1em;
   padding: 1em;
   float: left;
-  border: 2px solid red;
+  border: 2px solid grey;
+  border-radius: 15px;
 }
 
 .Feedback {
@@ -72,5 +73,6 @@
   width: 35%;
   margin: 1em;
   float: right;
-  border: 2px solid blue;
+  border: 2px solid grey;
+  border-radius: 15px;
 }
