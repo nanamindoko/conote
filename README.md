@@ -46,7 +46,7 @@ It contains 'index.js' and 'index.css'. This loads 'App.js' and 'App.css', which
 - My feedback
 - Note-taking page
 
-## How to run Server
+### How to run Server
 1. `cd server && npm install`
 2. `npm start`
 
