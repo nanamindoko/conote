@@ -9,17 +9,18 @@ Repository for CS473-Introduction to Social Computing project
 - npm 6.12.0
 - Express.js
 - React.js
+- Firebase
 
 ### Client
 React.js as a clientside framework
 
 ### Server
 Use Express.js as a serverside framework
-- Link Client(React) - Server(Express) - DB(Mongo)
+- Link Client(React) - Server(Express) - DB(Firebase)
 - Routing
 
 ### Database
-MongoDB
+Firebase
 
 ### Open-Source Library
 We used 'Bootstrap' for front-end design.
