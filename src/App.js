@@ -40,7 +40,7 @@ class App extends Component {
   }
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Navbar {...this.props} />
         </div>
@@ -48,9 +48,7 @@ class App extends Component {
           <Route
             exact
             path="/"
-            render={props => (
-              <Home courses={this.state.courses} {...props} {...this.state} />
-            )}
+            render={props => <Home {...props} {...this.state} />}
           />
           <Route path="/course/:id">
             <Course {...this.state} />

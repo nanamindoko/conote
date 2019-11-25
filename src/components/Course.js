@@ -1,24 +1,39 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Card, Button } from "semantic-ui-react";
+import { Card, Button, Label } from "semantic-ui-react";
 import firebase from "../firebase";
 
 export function Course(props) {
   // const [courses, setCourses] = useState(0);
   const { id } = useParams();
   const { courses, notes } = props;
-  const course = notes.filter(crs => {
-    return crs.id == 1;
+  const course = courses.filter(crs => {
+    return crs.id == id;
   });
-  console.log(course);
+  const courseNotes = notes.filter(note => {
+    return note.courseId === id;
+  });
   return (
     <div className="Courses">
       <h1>{course[0].name}</h1>
       <Card.Group>
-        <Card as={Link} to="/note/1" fluid color="red" header="Note 1" />
-        <Card as={Link} to="/note/2" fluid color="orange" header="Note 2" />
-        <Card as={Link} to="/note/3" fluid color="yellow" header="Note 3" />
+        {courseNotes.map(note => (
+          <Card
+            as={Link}
+            to={`/note/${note.id}`}
+            fluid
+            color="red"
+            header={`${note.name}`}
+            description={
+              <Label color="blue">
+                2019/11/25
+                <Label.Detail>Student 1</Label.Detail>
+              </Label>
+            }
+          />
+        ))}
       </Card.Group>
+      <Card fluid />
       <Button as={Link} to={`/write/${id}`} attached="bottom">
         Write a note
       </Button>

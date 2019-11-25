@@ -14,6 +14,7 @@ export class WriteFeedback extends Component {
   render() {
     const db = firebase.firestore();
     const data = this.state.data;
+    const noteId = this.state.noteId;
     return (
       <div className="Feedback">
         <Header as="h1">Write a Feedback</Header>
@@ -51,7 +52,7 @@ export class WriteFeedback extends Component {
               db
                 .collection("feedbacks")
                 .add({
-                  id: 1,
+                  id: noteId,
                   data: data,
                   rating: this.state.rating
                 })

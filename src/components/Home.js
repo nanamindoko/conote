@@ -9,6 +9,7 @@ export class Home extends React.Component {
   }
   render() {
     const courses = this.props.courses;
+    const notes = this.props.notes;
     return (
       <div className="courselist">
         <div className="Courses">

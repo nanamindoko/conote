@@ -5,16 +5,33 @@ import { Button, Header, Rating } from "semantic-ui-react";
 import firebase from "../firebase";
 
 export class WriteNote extends Component {
-  state = {
-    noteId: this.props.id
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      courseId: this.props.match.params.id,
+      notes: []
+    };
+  }
+  componentDidMount() {
+    const notes = [];
+    const db = firebase.firestore();
+    db.collection("notes")
+      .get()
+      .then(querySnapshot => {
+        querySnapshot.forEach(function(doc) {
+          notes.push(doc.data());
+        });
+        this.setState({ notes: notes });
+      });
+  }
 
   handleRate = (e, { rating }) => this.setState({ rating });
   handleData = data => this.setState({ data });
   render() {
     const db = firebase.firestore();
     const data = this.state.data;
-    const id = this.state.noteId;
+    const courseId = this.state.courseId;
+    const id = this.state.notes.length;
     return (
       <div className="">
         <Header as="h1">Write a Note</Header>
@@ -26,6 +43,13 @@ export class WriteNote extends Component {
           data={{
             time: 1569611146631,
             blocks: [
+              {
+                type: "header",
+                data: {
+                  text: "Note Title!",
+                  level: 2
+                }
+              },
               {
                 type: "paragraph",
                 data: {
@@ -45,8 +69,9 @@ export class WriteNote extends Component {
               db
                 .collection("notes")
                 .add({
-                  id: 1,
-                  name: `Lecture ${1}`,
+                  id: `${id + 1}`,
+                  courseId: courseId,
+                  name: data.blocks[0].data.text,
                   data: data
                 })
                 .then(function(docRef) {
