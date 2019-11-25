@@ -21,6 +21,9 @@ Use Express.js as a serverside framework
 ### Database
 MongoDB
 
+### Open-Source Library
+We used 'Bootstrap' for front-end design.
+
 ## Descriptions
 
 ### Codes
