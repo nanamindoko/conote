@@ -58,7 +58,7 @@ export class Home extends React.Component {
               to="/note/1"
               fluid
               color="red"
-              header="Note A"
+              header="Data Structures - Merge sort"
               description={
                 <Label color="orange">
                   2019/11/20
@@ -66,8 +66,8 @@ export class Home extends React.Component {
                 </Label>
               }
             />
-            <Card as={Link} to="/note/2" fluid color="orange" header="Note B" />
-            <Card as={Link} to="/note/3" fluid color="yellow" header="Note C" />
+            <Card as={Link} to="/note/2" fluid color="orange" header="Data Structure - Red-Black Tree" />
+            <Card as={Link} to="/note/3" fluid color="yellow" header="Algorithms - Bit O notation of Asymptotic growth" />
           </Card.Group>
         </div>
       </div>
