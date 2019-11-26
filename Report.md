@@ -101,3 +101,4 @@ In order to make users share note easily, one of the most important point is man
 However, during the high-fi implementation, I could know structures about ReactJS project, and some useful frameworks and libraries.
 
  - `Dorjnyam`
+ My contributions include developing UI and frontend of the web app. While I have prior experience with ReactJS, this project has shown me just how little I know. I have also prototyped the database interaction with Firebase Firestore NoSQL database. I have learned to utilize existing React libraries such as EditorJS and Semantic UI. From code to deployment, my understanding of fullstack development has greatly improved. I believe I have learned the basics of rapid development cycle and quick pivoting due to everchanging system requirements and feedback.
