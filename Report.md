@@ -32,8 +32,8 @@ Students only who upload their notes or give feedback to other notes can refer t
 
 ----- Screen Shot ------------
 
-  ![student_note](./student_note.png)   ![course](./course.png) 
-  ![feedback](./feedback.png)           ![mynote](./mynote.png)
+  ![student_note](./student_note.png){: width="150" height="150}  ![course](./course.png){: width="150" height="150}
+  ![feedback](./feedback.png){: width="150" height="150}           ![mynote](./mynote.png){: width="150" height="150}
 
 ------------------------------
 
