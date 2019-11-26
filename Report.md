@@ -11,14 +11,14 @@ Students only who upload their notes or give feedback to other notes can refer t
 
 ## Client
  ### How to use it
- - First page: There are two parts: Courses list, and my notes list. In my notes list, You can see your notes that you wrote and revise them. You can go to course page by choosing a specific course in the course list.
- - Course page: There is a list of notes including your notes, and other users notes. The list of notes are ordered in rating scored by other users, in this page, you can add your new note. 
- - Note taking page: You can upload your new notes by manually writing down on the web, or simply uploading your notes in the form of pdf, or jpg. You can write down the question to get an answer from feedback. - It will be implemented.
- - Note page: If you click a note in the course page, you can see the note on the left side, and feedback for the note on the right side. You can give feedback to the note simply type in your feedback, and you can rate the note or feedback. If you are in note page which is yours, then you can also revise the current note.
- - Feedback: You can get feedback from, or give feedback to other users. Feedback can be recommended revision or better solutions for other users notes, or it can be an answer for the question on the note.
- - Rating system: Users can score the notes in 5 star score, and this rating affect the order of the list of the course’s notes.  There are also rating for feedback, and it is ‘like-unlike’ system. Feedback rating system is processed as hard-coded.
- - Permission: Not every user can see all the notes. Users have to give feedback to other notes periodically. Otherwise, users’ permission to access to other notes will be lost. However, if someone’s feedback get high rated by other users, period will be extended for some days. 
- - Login: Users have to login the CoNote to upload notes, exchange feedback, and rates. We make this as hard-coded. 
+ - **First page**: There are two parts: Courses list, and my notes list. In my notes list, You can see your notes that you wrote and revise them. You can go to course page by choosing a specific course in the course list.
+ - **Course page**: There is a list of notes including your notes, and other users notes. The list of notes are ordered in rating scored by other users, in this page, you can add your new note. 
+ - **Note taking page**: You can upload your new notes by manually writing down on the web, or simply uploading your notes in the form of pdf, or jpg. You can write down the question to get an answer from feedback. - It will be implemented.
+ - **Note page**: If you click a note in the course page, you can see the note on the left side, and feedback for the note on the right side. You can give feedback to the note simply type in your feedback, and you can rate the note or feedback. If you are in note page which is yours, then you can also revise the current note.
+ - **Feedback**: You can get feedback from, or give feedback to other users. Feedback can be recommended revision or better solutions for other users notes, or it can be an answer for the question on the note.
+ - **Rating system**: Users can score the notes in 5 star score, and this rating affect the order of the list of the course’s notes.  There are also rating for feedback, and it is ‘like-unlike’ system. Feedback rating system is processed as hard-coded.
+ - **Permission**: Not every user can see all the notes. Users have to give feedback to other notes periodically. Otherwise, users’ permission to access to other notes will be lost. However, if someone’s feedback get high rated by other users, period will be extended for some days. 
+ - **Login**: Users have to login the CoNote to upload notes, exchange feedback, and rates. We make this as hard-coded. 
 
 ### Example Runs (Scenario)
  - end-to-end scenario 1 : A user missed the class, so the user wants to see other student’s lecture note.
@@ -29,6 +29,13 @@ Students only who upload their notes or give feedback to other notes can refer t
  Home -> Course -> write a note -> my notes -> my feedbacks
  - end-to-end scenario 4 : A user wants to rate other’s lecture notes by how useful were they.
  Home -> Course -> rating lecture notes
+
+----- Screen Shot ------------
+
+  ![student_note](./student_note.png)   ![course](./course.png) 
+  ![feedback](./feedback.png)           ![mynote](./mynote.png)
+
+------------------------------
 
 ## Prototype
 http://143.248.138.190:3000/
