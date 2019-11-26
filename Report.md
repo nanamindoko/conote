@@ -21,16 +21,38 @@ Students only who upload their notes or give feedback to other notes can refer t
  - **Login**: Users have to login the CoNote to upload notes, exchange feedback, and rates. We make this as hard-coded. 
 
 ### Example Runs (Scenario)
- - end-to-end scenario 1 : A user missed the class, so the user wants to see other student’s lecture note.
- Home -> Course -> mandatory feedback -> lecture notes & feedbacks.
- - end-to-end scenario 2 : A user took a lecture note and wants to share the note with other students to help them.
- Home -> Course -> Share a note
- - end-to-end scenario 3 : A user took a lecture note but not sure note was correctly taken. So the user wants to ask students some questions about the lecture and the lecture notes.
- Home -> Course -> write a note -> my notes -> my feedbacks
- - end-to-end scenario 4 : A user wants to rate other’s lecture notes by how useful were they.
- Home -> Course -> rating lecture notes
+**end-to-end scenario 1** : A user missed the class, so the user wants to see other student’s lecture note.
+------
+1. Start from the First page.
 
------ Screen Shot ------------
+2. Click a Course name to watch notes of Course 
+
+3. Fill in a mandatory feedback to access note. (Not Implemented yet)
+4. Access to more lecture notes & feedbacks.
+
+**end-to-end scenario 2** : A user took a lecture note and wants to share the note with other students to help them.
+------
+1. Start from the First page.
+2. Click a Course name to watch notes of Course 
+3. Click Add Note and write one. (Not Implemented yet)
+4. Click submit to upload. (Not Implemented yet)
+
+**end-to-end scenario 3** : A user wants to rate other’s lecture notes by how useful were they, and give feedback.
+------
+1. Start from the First page.
+2. Click a Course name to watch notes of Course 
+3. Click a note and write feedback. You can also rate note by out-of-five-stars rating.
+
+**end-to-end scenario 4** : A user took a lecture note but not sure note was correctly taken. So the user wants to ask students some questions about the lecture and the lecture notes.
+------
+1. Start from step 4 of scenario 2.
+2. Check my notes from the First page. If there is feedback, it will show its existence and date.
+
+3. Read feedback that is written for my note. (Not Implemented yet)
+
+
+### Screen Shots
+-----------------
 
   ![student_note](./student_note.png) ![course](./course.png)
   ![feedback](./feedback.png)         ![mynote](./mynote.png)
