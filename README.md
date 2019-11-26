@@ -16,11 +16,11 @@ React.js as a clientside framework
 
 ### Server
 Use Express.js as a serverside framework
-- Link Client(React) - Server(Express) - DB(Firebase)
+- Link Client(React) - Server(Express) - DB(Firebase, MongoDB)
 - Routing
 
 ### Database
-Firebase
+Firebase, MongoDB
 
 ### Open-Source Library
 We used 'Bootstrap' for front-end design.
