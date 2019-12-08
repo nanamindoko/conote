@@ -9,7 +9,6 @@ export class Navbar extends Component {
 
   render() {
     const { activeItem } = this.state;
-    const { user, signOut, signInWithGoogle } = this.props;
 
     const myPageButton = (
         <Menu.Item
@@ -37,8 +36,10 @@ export class Navbar extends Component {
         <Menu.Item
             name="logout"
             onClick={this.props.onLogout}
+            as={Link}
+            to="/"
         >
-            LogOut
+            Logout
         </Menu.Item>
     );
 

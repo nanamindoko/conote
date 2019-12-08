@@ -10,7 +10,7 @@ class Authentication extends React.Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleLogin = this.handleLogin.bind(this);
-        this.handleRegister = this.handleRegister(this);
+        this.handleRegister = this.handleRegister.bind(this);
         this.handleKeyPress = this.handleKeyPress.bind(this);
     }
 
@@ -69,13 +69,18 @@ class Authentication extends React.Component {
                 <input
                     name="username"
                     type="text"
-                    className="validate"/>
+                    className="validate"
+                    onChange={this.handleChange}
+                    value={this.state.username}/>
 
                 <label>Password</label>
                 <input
                     name="password"
                     type="password"
-                    className="validate"/>
+                    className="validate"
+                    onChange={this.handleChange}
+                    value={this.state.password}
+                    onKeyPress={this.handleKeyPressfON}/>
             </div>
         );
 
@@ -101,5 +106,17 @@ class Authentication extends React.Component {
         );
     }
 }
+
+Authentication.propTypes = {
+    mode: React.PropTypes.bool,
+    onLogin: React.PropTypes.func,
+    onRegister: React.PropTypes.func
+};
+
+Authentication.defaultProps = {
+    mode: true,
+    onLogin: (id, pw) => { console.error("login function not defined"); },
+    onRegister: (id, pw) => { console.error("register function not defined"); }
+};
 
 export default Authentication;

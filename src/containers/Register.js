@@ -46,8 +46,7 @@ class Register extends React.Component {
     render() {
         return (
             <div>
-                <Authentication mode={false}
-                                onRegister={this.handleRegister}/>
+                <Authentication mode={false} onRegister={this.handleRegister}/>
             </div>
         );
     }

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import {Course, Note, Navbar} from '../components';
-import { Home, Login, Register } from '.';
 
 import { connect } from 'react-redux';
-import {getStatusRequest, logoutRequest} from "../actions/authentication";
+import { getStatusRequest, logoutRequest } from "../actions/authentication";
 import "../App.css";
 import "semantic-ui-css/semantic.min.css";
 
@@ -77,8 +76,7 @@ class App extends React.Component {
     render(){
         return (
             <div>
-                <Navbar isLoggedIn={this.props.status.isLoggedIn}
-                        onLogout={this.handleLogout}/>
+                <Navbar isLoggedIn={this.props.status.isLoggedIn} onLogout={this.handleLogout}/>
                 {this.props.children}
             </div>
         );
@@ -95,6 +93,9 @@ const mapDispatchToProps = (dispatch) => {
     return {
         getStatusRequest: () => {
             return dispatch(getStatusRequest());
+        },
+        logoutRequest: () => {
+            return dispatch(logoutRequest());
         }
     };
 };
