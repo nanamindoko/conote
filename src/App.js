@@ -6,6 +6,8 @@ import { Home } from "./components/Home";
 import { Course } from "./components/Course";
 import { Note } from "./components/Note";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import MyNote from "./components/MyNote";
+import NoteTaking from "./components/NoteTaking";
 
 class App extends Component {
   render() {
@@ -24,6 +26,13 @@ class App extends Component {
           <Route path="/note/:id">
             <Note />
           </Route>
+          <Route path="/mynote/:id">
+           <MyNote />
+          </Route>
+          <Route path="/write">
+           <NoteTaking />
+          </Route>
+
         </Switch>
       </Router>
     );

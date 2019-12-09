@@ -27,6 +27,7 @@ export function Course() {
       </Card.Group>
       <div>
           <Button
+              as={Link} to="/write"
             attached="bottom"
             content="Add Note"
           />

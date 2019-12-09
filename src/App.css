@@ -66,11 +66,44 @@
   border: 2px solid red;
 }
 
-.Feedback {
+.MyNote {
+  text-align: justify;
+  width: 50%;
+  margin: 1em;
+  padding: 1em;
+  float: left;
+  border: 2px solid red;
+}
+
+.WriteFeedback {
   text-align: justify;
   padding: 1em;
   width: 35%;
   margin: 1em;
   float: right;
   border: 2px solid blue;
+}
+.ReadFeedback {
+  text-align: justify;
+  padding: 1em;
+  width: 35%;
+  margin: 1em;
+  float: right;
+  border: 2px solid blue;
+}
+.NoteTaking {
+  text-align: justify;
+  padding: 1em;
+  width: 100%;
+  margin: 1em;
+}
+
+.Editor {
+  /* background-color: rgb(230, 214, 219); */
+  text-align: justify;
+  width: 45%;
+  margin: 10px;
+  border: 1px solid black;
+
+  /* border: 2px solid red; */
 }

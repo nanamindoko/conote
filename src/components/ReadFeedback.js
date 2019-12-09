@@ -3,7 +3,7 @@ import Editor from "@stfy/react-editor.js";
 import { EDITOR_JS_TOOLS } from "../editor-tools";
 import { Button, Header, Rating } from "semantic-ui-react";
 
-export class WriteFeedback extends Component {
+export class ReadFeedback extends Component {
   state = {
     noteId: this.props.id
   };
@@ -12,8 +12,8 @@ export class WriteFeedback extends Component {
   handleData = data => this.setState({ data });
   render() {
     return (
-      <div className="WriteFeedback">
-        <Header as="h1">Write a Feedback</Header>
+      <div className="ReadFeedback">
+        <Header as="h1">Feedback1</Header>
 
         <Editor
           tools={EDITOR_JS_TOOLS}
@@ -25,31 +25,17 @@ export class WriteFeedback extends Component {
               {
                 type: "paragraph",
                 data: {
-                  text: "Write here!"
+                  text: "What a good summary!"
                 }
               }
             ],
             version: "2.15.0"
           }}
         />
-        <Header as="h1">Rate this note!</Header>
-        <Rating
-          icon="star"
-          size="huge"
-          defaultRating={3}
-          maxRating={5}
-          onRate={this.handleRate}
-        />
-        <div>
-          <Button
-            attached="bottom"
-            content="Submit"
-            onClick={() => console.log(this.state)}
-          />
-        </div>
+
       </div>
     );
   }
 }
 
-export default WriteFeedback;
+export default ReadFeedback;
