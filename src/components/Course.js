@@ -8,6 +8,7 @@ export function Course() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();
   global.feedbacked= true;
+  global.lastcourse = id;
   let cardg;
   if(id==="1"){
       cardg = <Card.Group>

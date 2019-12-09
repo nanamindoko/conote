@@ -13,7 +13,7 @@ export class ReadFeedback extends Component {
   render() {
     return (
       <div className="ReadFeedback">
-        <Header as="h1">Feedback1</Header>
+        <Header as="h1">Feedback</Header>
 
         <Editor
           tools={EDITOR_JS_TOOLS}
