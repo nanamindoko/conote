@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Menu } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
+
 
 export class Navbar extends Component {
   state = {};
@@ -66,8 +68,8 @@ export class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-    isLoggedIn: React.PropTypes.bool,
-    onLogout: React.PropTypes.func
+    isLoggedIn: PropTypes.bool,
+    onLogout: PropTypes.func
 };
 
 Navbar.defaultProps = {

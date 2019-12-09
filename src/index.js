@@ -12,6 +12,8 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import thunk from 'redux-thunk';
 import {Course, Note} from "./components";
+import NoteTaking from "./components/NoteTaking";
+import MyNote from "./components/MyNote";
 
 const store = createStore(reducers, applyMiddleware(thunk));
 ReactDOM.render(
@@ -37,6 +39,12 @@ ReactDOM.render(
 
                 <Route path="/note/:id">
                     <Note />
+                </Route>
+                <Route path="/write">
+                    <NoteTaking />
+                </Route>
+                <Route path="/mynote">
+                    <MyNote />
                 </Route>
             </Switch>
         </Router>
