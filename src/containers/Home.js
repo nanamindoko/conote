@@ -86,16 +86,66 @@ export class Home extends React.Component {
               to="/mynote/1"
               fluid
               color="red"
-              header="Virtual Memory"
-              description={
-                <Label color="orange">
-                  2019/11/20
-                  <Label.Detail>Feedbacks received</Label.Detail>
-                </Label>
-              }
-            />
-            <Card key="2" as={Link} to="/mynote/2" fluid color="orange" header="Memory Hierarchy" />
-            <Card key="3" as={Link} to="/mynote/3" fluid color="yellow" header="Merge Sort" />
+            >
+            <Card.Content
+                header="Virtual Memory"
+                description={
+                    <Label color="orange">
+                        2019/11/20
+                        <Label.Detail>Feedbacks received</Label.Detail>
+                    </Label>
+                }>
+                </Card.Content>
+                <Card.Content extra>
+                    <a>
+                        from 'a'
+                    </a>
+                </Card.Content>
+            </Card>
+              <Card
+                  key="2"
+                  as={Link}
+                  to="/mynote/2"
+                  fluid
+                  color="orange"
+              >
+                  <Card.Content
+                      header="Memory Hierarchy"
+                      description={
+                          <Label color="orange">
+                              2019/11/20
+                              <Label.Detail>Feedbacks received</Label.Detail>
+                          </Label>
+                      }>
+                  </Card.Content>
+                  <Card.Content extra>
+                      <a>
+                          from 'a'
+                      </a>
+                  </Card.Content>
+              </Card>
+              <Card
+                  key="3"
+                  as={Link}
+                  to="/mynote/3"
+                  fluid
+                  color="yellow"
+              >
+                  <Card.Content
+                      header="Merge Sort"
+                      description={
+                          <Label color="yellow">
+                              2019/11/20
+                              <Label.Detail>Feedbacks received</Label.Detail>
+                          </Label>
+                      }>
+                  </Card.Content>
+                  <Card.Content extra>
+                      <a>
+                          from 'b'
+                      </a>
+                  </Card.Content>
+              </Card>
           </Card.Group>
         </div>
       </div>
