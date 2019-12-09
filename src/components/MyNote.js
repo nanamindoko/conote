@@ -21,6 +21,10 @@ export function MyNote() {
     note_content = "Memory Hierarchy / Cache Memories\nRAM: Random Access Memory\n";
     second_cont = "Key features: RAM is traditionally packaged as a chip.\nBasic Storage unit is normally a cell.\n Multiple RAM chips form a memory";
     third_cont = "DRAM and SRAM are volatile memories, and there is also Nonvolatile memories\n - ROM: Read-only memory\n - PROM: Programmable ROM\n - EPROM: Eraseable PROM\n and so on..";
+  }else if (id==3){
+    note_content = "Merge Sort\n - merge sort is an efficient, general-purpose, comparison based sorting algorithm. It is a divide and conquer algorithm that was invented by John von Neumann in 1945";
+    second_cont = "Conceptually, it works as follows\n  1. Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted) \n  2. Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.";
+    third_cont = "Its time complexity is O(nlogn)";
   }
   return (
     <div>
