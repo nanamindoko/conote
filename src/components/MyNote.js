@@ -11,6 +11,7 @@ export function MyNote() {
   var note_content = "";
   var second_cont = "";
   var third_cont = "";
+  global.mynoteid = id
   if (id==1){
     note_content = "Why virtual memory?\ - Uses main memory efficiently\ - Simplifies memory management\ - Isolates address spaces";
     second_cont = "Enabling data structure: page table\ - page table is an array of page table entries(PTEs) that maps virtual pages to physical pages.";
@@ -23,7 +24,7 @@ export function MyNote() {
   }
   return (
     <div>
-      <div className="Note">
+      <div className="MyNote">
         <Header as="h1">Student Note</Header>
         <Editor
           tools={EDITOR_JS_TOOLS}

@@ -81,6 +81,7 @@ export class Home extends React.Component {
           <Header as="h1">My Notes</Header>
           <Card.Group>
             <Card
+              key="1"
               as={Link}
               to="/mynote/1"
               fluid
@@ -93,8 +94,8 @@ export class Home extends React.Component {
                 </Label>
               }
             />
-            <Card as={Link} to="/mynote/2" fluid color="orange" header="Data Structure - Red-Black Tree" />
-            <Card as={Link} to="/mynote/3" fluid color="yellow" header="Algorithms - Big O notation of Asymptotic growth" />
+            <Card key="2" as={Link} to="/mynote/2" fluid color="orange" header="Data Structure - Red-Black Tree" />
+            <Card key="3" as={Link} to="/mynote/3" fluid color="yellow" header="Algorithms - Big O notation of Asymptotic growth" />
           </Card.Group>
         </div>
       </div>
