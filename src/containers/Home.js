@@ -7,7 +7,7 @@ export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      courses: [],
+      courses: [{id:1,name:'a',date:'2019/11/20'},{id:2,name:'b',date:'2019/12/02'},{id:3,name:'c',date:'2019/11/10'}],
       notes: []
     };
   }
@@ -20,7 +20,7 @@ export class Home extends React.Component {
         querySnapshot.forEach(function(doc) {
           courses.push(doc.data());
         });
-        this.setState({ courses: courses });
+        //this.setState({ courses: courses });
       });
   }
   render() {
@@ -40,7 +40,7 @@ export class Home extends React.Component {
                         header={`${course.name}`}
                         description={
                             <Label color="blue">
-                                2019/11/20
+                                {course.date}
                                 <Label.Detail>Notes updated</Label.Detail>
                             </Label>
                         }
