@@ -48,7 +48,7 @@ ReactDOM.render(
                 <Route path="/write">
                     <NoteTaking />
                 </Route>
-                <Route path="/mynote">
+                <Route path="/mynote/:id">
                     <MyNote />
                 </Route>
             </Switch>

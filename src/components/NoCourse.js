@@ -8,6 +8,7 @@ export function NoCourse() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();
     const allowed = true;
+    global.lastcourse = id;
     // const db = firebase.firestore();
   // // db.collection("courses")
   // //   .get()

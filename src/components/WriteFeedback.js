@@ -11,6 +11,8 @@ export class WriteFeedback extends Component {
 
   handleRate = (e, { rating }) => this.setState({ rating });
   handleData = data => this.setState({ data });
+
+  url= "/course/"+global.lastcourse;
   render() {
     return (
       <div className="WriteFeedback">
@@ -43,7 +45,7 @@ export class WriteFeedback extends Component {
         />
         <div>
           <Button
-              as={Link} to="/course/1"
+              as={Link} to={this.url}
               attached="bottom"
               content="Submit"
               onClick={() => console.log(this.state)}
