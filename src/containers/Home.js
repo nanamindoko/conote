@@ -86,7 +86,7 @@ export class Home extends React.Component {
               to="/mynote/1"
               fluid
               color="red"
-              header="Data Structures - Merge sort"
+              header="Virtual Memory"
               description={
                 <Label color="orange">
                   2019/11/20
@@ -94,8 +94,8 @@ export class Home extends React.Component {
                 </Label>
               }
             />
-            <Card key="2" as={Link} to="/mynote/2" fluid color="orange" header="Data Structure - Red-Black Tree" />
-            <Card key="3" as={Link} to="/mynote/3" fluid color="yellow" header="Algorithms - Big O notation of Asymptotic growth" />
+            <Card key="2" as={Link} to="/mynote/2" fluid color="orange" header="Memory Hierarchy" />
+            <Card key="3" as={Link} to="/mynote/3" fluid color="yellow" header="Merge Sort" />
           </Card.Group>
         </div>
       </div>
