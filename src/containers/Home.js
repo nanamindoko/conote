@@ -62,7 +62,7 @@ export class Home extends React.Component {
                         header={`${course.name}`}
                         description={
                             <Label color="blue">
-                                2019/11/20
+                                {course.date}
                                 <Label.Detail>Notes updated</Label.Detail>
                             </Label>
                         }
