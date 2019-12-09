@@ -13,7 +13,7 @@ export function Course() {
   if(id==="1"){
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/1">
-              <Card.Content header="Quick sort by John"/>
+              <Card.Content header="Merge sort by John"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -28,7 +28,7 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="orange"as={Link} to="/note/2">
-              <Card.Content header="Bubble sort by John"/>
+              <Card.Content header="Red-black tree by Daivd"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -43,7 +43,7 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="yellow"as={Link} to="/note/3">
-              <Card.Content header="Master sort by John"/>
+              <Card.Content header="Dijkstra algorithm by John"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -61,7 +61,7 @@ export function Course() {
   }else if (id==="2"){
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/4">
-              <Card.Content header="Quick sort by John"/>
+              <Card.Content header="Virtual memory by Joanne"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -76,8 +76,8 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="orange"as={Link} to="/note/5">
-              <Card.Content header="Bubble sort by John"/>
-              <Card.Content extra>
+              <Card.Content header="Memory Hierarchy by Jieun"/>
+              <Card.Content extra> 
                   <a>
                       <Rating
                           icon="star"
@@ -91,7 +91,7 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="yellow"as={Link} to="/note/6">
-              <Card.Content header="Master sort by John"/>
+              <Card.Content header="Dynamic allocation of Hyosin"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -109,7 +109,7 @@ export function Course() {
   }else{
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/7">
-              <Card.Content header="Quick sort by John"/>
+              <Card.Content header="Born-Oppenheimer Approximation by Sunghee"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -124,7 +124,7 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="orange"as={Link} to="/note/8">
-              <Card.Content header="Bubble sort by John"/>
+              <Card.Content header="Molecular Orbital by Sunghee"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -139,7 +139,7 @@ export function Course() {
               </Card.Content>
           </Card>
           <Card fluid color="yellow"as={Link} to="/note/9">
-              <Card.Content header="Master sort by John"/>
+              <Card.Content header="Chemical Equilibrium by Hyungbin"/>
               <Card.Content extra>
                   <a>
                       <Rating
