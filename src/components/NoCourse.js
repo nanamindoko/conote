@@ -26,47 +26,10 @@ export function NoCourse() {
       <h1>{id}</h1>
       <Card.Group>
         <Card fluid color="red"as={Link} to="/note/NeedFeedback">
-            <Card.Content header="Quick sort by John"/>
+            <Card.Content header="This note needs your FEEDBACK!"/>
             <Card.Content extra>
                 <a>
-          <Rating
-              icon="star"
-              size="huge"
-              defaultRating={3}
-              maxRating={5}
-              disabled
-          />
-                    rated by 8 people
-                </a>
-            </Card.Content>
-        </Card>
-          <Card fluid color="orange"as={Link} to="/note/NeedFeedback">
-              <Card.Content header="Bubble sort by John"/>
-              <Card.Content extra>
-                  <a>
-                  <Rating
-                      icon="star"
-                      size="huge"
-                      defaultRating={2}
-                      maxRating={5}
-                      disabled
-                  />
-                   rated by 10 people
-                  </a>
-              </Card.Content>
-          </Card>
-        <Card fluid color="yellow"as={Link} to="/note/NeedFeedback">
-            <Card.Content header="Master sort by John"/>
-            <Card.Content extra>
-                <a>
-                <Rating
-                    icon="star"
-                    size="huge"
-                    defaultRating={3.5}
-                    maxRating={5}
-                    disabled
-                />
-                    rated by 2 people
+                    by Lee
                 </a>
             </Card.Content>
         </Card>
