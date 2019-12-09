@@ -10,6 +10,7 @@ export function Note() {
   var note_content = "";
   var second_cont = "";
   var third_cont = "";
+  global.noteid = id;
   if (id==1){
     note_content = "Why virtual memory?\ - Uses main memory efficiently\ - Simplifies memory management\ - Isolates address spaces";
     second_cont = "Enabling data structure: page table\ - page table is an array of page table entries(PTEs) that maps virtual pages to physical pages.";

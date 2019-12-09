@@ -26,25 +26,36 @@ export function NoCourse() {
       <h1>{id}</h1>
       <Card.Group>
         <Card fluid color="red"as={Link} to="/note/NeedFeedback">
-            <Card.Content header="This note needs your FEEDBACK!"/>
+            <Card.Content header="This note needs your FEEDBACK! #1"/>
             <Card.Content extra>
                 <a>
                     by Lee
                 </a>
             </Card.Content>
         </Card>
+          <Card fluid color="red"as={Link} to="/note/NeedFeedback">
+              <Card.Content header="This note needs your FEEDBACK! #2"/>
+              <Card.Content extra>
+                  <a>
+                      by Lee
+                  </a>
+              </Card.Content>
+          </Card>
+          <Card fluid color="red"as={Link} to="/note/NeedFeedback">
+              <Card.Content header="This note needs your FEEDBACK! #3"/>
+              <Card.Content extra>
+                  <a>
+                      by Lee
+                  </a>
+              </Card.Content>
+          </Card>
+
       </Card.Group>
-      <div>
-          <Button
-              as={Link} to="/write"
-            attached="bottom"
-            content="Add Note"
-          />
-        </div>
+
         <Message>
             <Message.Header>Mandatory Feedback!!</Message.Header>
             <p>
-                You need <b>1</b> more mandatory feedback to access other student's note.
+                You need <b>1</b> more mandatory feedback to access other student's note. Unless you give a feedback to them, you are note allowed to read or write lecture notes.
             </p>
         </Message>
     </div>

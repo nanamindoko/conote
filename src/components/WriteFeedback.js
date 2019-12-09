@@ -14,27 +14,51 @@ export class WriteFeedback extends Component {
 
   url= "/course/"+global.lastcourse;
   render() {
-    return (
+      const id= global.noteid;
+      let txt;
+      if(id==="1"){
+          txt = "Write here";
+      }else if(id==="2"){
+          txt = "Don't Write here";
+      }else if(id==="3"){
+          txt = "Don't Write here";
+      }else if(id==="4"){
+          txt = "Don't Write here";
+      }else if(id==="5"){
+          txt = "Don't Write here";
+      }else if(id==="6"){
+          txt = "Don't Write here";
+      }else if(id==="7"){
+          txt = "Don't Write here";
+      }else if(id==="8"){
+          txt = "Don't Write here";
+      }else if(id==="9"){
+          txt = "Don't Write here";
+      }else{
+          txt = "Write here";
+      }
+
+      return (
       <div className="WriteFeedback">
         <Header as="h1">Write a Feedback</Header>
 
-        <Editor
-          tools={EDITOR_JS_TOOLS}
-          onReady={() => console.log("Start Editor 2!")}
-          onData={this.handleData}
-          data={{
-            time: 1569611146631,
-            blocks: [
-              {
-                type: "paragraph",
-                data: {
-                  text: "Write here!"
-                }
-              }
-            ],
-            version: "2.15.0"
-          }}
-        />
+          <Editor
+              tools={EDITOR_JS_TOOLS}
+              onReady={() => console.log("Start Editor 2!")}
+              onData={this.handleData}
+              data={{
+                  time: 1569611146631,
+                  blocks: [
+                      {
+                          type: "paragraph",
+                          data: {
+                              text: txt
+                          }
+                      }
+                  ],
+                  version: "2.15.0"
+              }}
+          />
         <Header as="h1">Rate this note!</Header>
         <Rating
           icon="star"
