@@ -12,8 +12,8 @@ export function Course() {
   let cardg;
   if(id==="1"){
       cardg = <Card.Group>
-          <Card fluid color="red"as={Link} to="/note/1">
-              <Card.Content header="Merge sort by John"/>
+          <Card fluid color="red"as={Link} to="/note/4">
+              <Card.Content header="Merge sort by me"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -27,7 +27,7 @@ export function Course() {
                   </a>
               </Card.Content>
           </Card>
-          <Card fluid color="orange"as={Link} to="/note/2">
+          <Card fluid color="orange"as={Link} to="/note/5">
               <Card.Content header="Red-black tree by Daivd"/>
               <Card.Content extra>
                   <a>
@@ -42,7 +42,7 @@ export function Course() {
                   </a>
               </Card.Content>
           </Card>
-          <Card fluid color="yellow"as={Link} to="/note/3">
+          <Card fluid color="yellow"as={Link} to="/note/6">
               <Card.Content header="Dijkstra algorithm by John"/>
               <Card.Content extra>
                   <a>
@@ -60,8 +60,8 @@ export function Course() {
       </Card.Group>;
   }else if (id==="2"){
       cardg = <Card.Group>
-          <Card fluid color="red"as={Link} to="/note/4">
-              <Card.Content header="Virtual memory by Joanne"/>
+          <Card fluid color="red"as={Link} to="/note/1">
+              <Card.Content header="Virtual memory by me"/>
               <Card.Content extra>
                   <a>
                       <Rating
@@ -75,8 +75,8 @@ export function Course() {
                   </a>
               </Card.Content>
           </Card>
-          <Card fluid color="orange"as={Link} to="/note/5">
-              <Card.Content header="Memory Hierarchy by Jieun"/>
+          <Card fluid color="orange"as={Link} to="/note/2">
+              <Card.Content header="Memory Hierarchy by me"/>
               <Card.Content extra> 
                   <a>
                       <Rating
@@ -90,7 +90,7 @@ export function Course() {
                   </a>
               </Card.Content>
           </Card>
-          <Card fluid color="yellow"as={Link} to="/note/6">
+          <Card fluid color="yellow"as={Link} to="/note/3">
               <Card.Content header="Dynamic allocation of Hyosin"/>
               <Card.Content extra>
                   <a>

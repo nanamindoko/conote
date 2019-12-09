@@ -7,7 +7,7 @@ export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      courses: [{id:1,name:'a',date:'2019/11/20'},{id:2,name:'b',date:'2019/12/02'},{id:3,name:'c',date:'2019/11/10'}],
+      courses: [{id:1,name:'Data structure',date:'2019/11/20'},{id:2,name:'System programming',date:'2019/12/02'},{id:3,name:'General chemist',date:'2019/11/10'}],
       notes: []
     };
   }
