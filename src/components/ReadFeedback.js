@@ -25,7 +25,7 @@ export class ReadFeedback extends Component {
               {
                 type: "paragraph",
                 data: {
-                  text: "What a good summary!"
+                  text: "What a good summary! But Second paragraph is too simple to understand.\n I think if you fix that paragraph more detailed, then it would be better!"
                 }
               }
             ],
