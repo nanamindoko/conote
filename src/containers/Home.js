@@ -7,7 +7,7 @@ export class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      courses: [{id:1,name:'Data structure',date:'2019/11/20'},{id:2,name:'System programming',date:'2019/12/02'},{id:3,name:'General chemist',date:'2019/11/10'}],
+      //courses: [{id:1,name:'Data structure',date:'2019/11/20',state:'nocourse'},{id:2,name:'System programming',date:'2019/12/02',state:'nocourse'},{id:3,name:'General chemist',date:'2019/11/10',state:'nocourse'}],
       notes: []
     };
   }
@@ -24,17 +24,17 @@ export class Home extends React.Component {
       });
   }
   render() {
-    const courses = this.state.courses;
-    let cardg;
-    if (!global.feedbacked){
+    //const courses = this.state.courses;
+      const courses = global.courses;
 
+      let cardg;
         cardg = <Card.Group>
             {courses.map(course => (
                 <>
                     <Card
                         key={course.id}
                         as={Link}
-                        to={`/nocourse/${course.id}`}
+                        to={`/${course.state}/${course.id}`}
                         fluid
                         color="red"
                         header={`${course.name}`}
@@ -48,29 +48,7 @@ export class Home extends React.Component {
                 </>
             ))}
         </Card.Group>;
-    }
-    else{
-        cardg = <Card.Group>
-            {courses.map(course => (
-                <>
-                    <Card
-                        key={course.id}
-                        as={Link}
-                        to={`/course/${course.id}`}
-                        fluid
-                        color="red"
-                        header={`${course.name}`}
-                        description={
-                            <Label color="blue">
-                                {course.date}
-                                <Label.Detail>Notes updated</Label.Detail>
-                            </Label>
-                        }
-                    ></Card>
-                </>
-            ))}
-        </Card.Group>;
-    }
+
     return (
       <div className="courselist">
         <div className="Courses">
@@ -134,7 +112,7 @@ export class Home extends React.Component {
                   <Card.Content
                       header="Merge Sort"
                       description={
-                          <Label color="yellow">
+                          <Label color="orange">
                               2019/11/20
                               <Label.Detail>Feedbacks received</Label.Detail>
                           </Label>
