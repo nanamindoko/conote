@@ -62,9 +62,15 @@ export class ReadFeedback extends Component {
                       {
                           type: "paragraph",
                           data: {
-                              text: "This note is so simple that I cannot get useful lecture contents from this note. Please write more detailed concepts"
+                              text: "This note is so simple that I cannot get useful lecture contents from this note. Please write more detailed concepts."
                           }
-                      }
+                      },
+                      {
+                        type: "paragraph",
+                        data: {
+                            text: "By the way, the space complexity of merge sort is O(n)."
+                        }
+                    }
                   ],
                   version: "2.15.0"
               }}
