@@ -98,7 +98,7 @@ export class Home extends React.Component {
                 </Card.Content>
                 <Card.Content extra>
                     <a>
-                        from 'a'
+                        from 'System Programming'
                     </a>
                 </Card.Content>
             </Card>
@@ -120,7 +120,7 @@ export class Home extends React.Component {
                   </Card.Content>
                   <Card.Content extra>
                       <a>
-                          from 'a'
+                          from 'System Programming'
                       </a>
                   </Card.Content>
               </Card>
@@ -142,7 +142,7 @@ export class Home extends React.Component {
                   </Card.Content>
                   <Card.Content extra>
                       <a>
-                          from 'b'
+                          from 'Data Structure'
                       </a>
                   </Card.Content>
               </Card>

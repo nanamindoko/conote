@@ -10,7 +10,9 @@ export function Course() {
   global.feedbacked= true;
   global.lastcourse = id;
   let cardg;
+  var name;
   if(id==="1"){
+      name = "Data Structure";
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/4">
               <Card.Content header="Merge sort by me"/>
@@ -59,6 +61,7 @@ export function Course() {
           </Card>
       </Card.Group>;
   }else if (id==="2"){
+      name = "System Programming";
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/1">
               <Card.Content header="Virtual memory by me"/>
@@ -107,6 +110,7 @@ export function Course() {
           </Card>
       </Card.Group>;
   }else{
+      name = "General Chemistry";
       cardg = <Card.Group>
           <Card fluid color="red"as={Link} to="/note/7">
               <Card.Content header="Born-Oppenheimer Approximation by Sunghee"/>
@@ -169,7 +173,7 @@ export function Course() {
   return (
 
     <div className="Courses">
-      <h1>{id}</h1>
+      <h1>{name}</h1>
         {cardg}
       <div>
           <Button
