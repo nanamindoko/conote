@@ -38,6 +38,16 @@
   float: left;
   /* border: 2px solid blue; */
 }
+
+.NoCourses {
+  /* background-color: aliceblue; */
+  text-align: justify;
+  width: 45%;
+  margin: 10px;
+  float: left;
+  /* border: 2px solid blue; */
+}
+
 .Notes {
   /* background-color: aliceblue; */
   text-align: justify;
@@ -51,6 +61,7 @@
   text-decoration: none;
   list-style: none;
 }
+
 .Courses > ul > li {
   margin: 5px;
   padding: 5px;

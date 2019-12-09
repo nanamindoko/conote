@@ -44,9 +44,9 @@ export class WriteFeedback extends Component {
         <div>
           <Button
               as={Link} to="/course/1"
-            attached="bottom"
-            content="Submit"
-            onClick={() => console.log(this.state)}
+              attached="bottom"
+              content="Submit"
+              onClick={() => console.log(this.state)}
           />
         </div>
       </div>

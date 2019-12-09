@@ -57,7 +57,7 @@ export class Navbar extends Component {
 
       return (
           <Menu>
-              {this.props.isLoggedIn ? myPageButton : undefined}
+              {this.props.isLoggedIn ? myPageButton : myPageButton}
               <Menu.Menu position={"right"}>
                   {this.props.isLoggedIn ? logoutButton : loginButton}
                   {this.props.isLoggedIn ? undefined : registerButton}

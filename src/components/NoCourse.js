@@ -4,10 +4,10 @@ import { Card } from "semantic-ui-react";
 import firebase from "../firebase";
 import {Message, Button, Header, Rating } from "semantic-ui-react";
 
-export function Course() {
+export function NoCourse() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();
-  global.feedbacked= true;
+    const allowed = true;
     // const db = firebase.firestore();
   // // db.collection("courses")
   // //   .get()
@@ -21,10 +21,10 @@ export function Course() {
 
   return (
 
-    <div className="Courses">
+    <div className="NoCourses">
       <h1>{id}</h1>
       <Card.Group>
-        <Card fluid color="red"as={Link} to="/note/1">
+        <Card fluid color="red"as={Link} to="/note/NeedFeedback">
             <Card.Content header="Quick sort by John"/>
             <Card.Content extra>
                 <a>
@@ -39,7 +39,7 @@ export function Course() {
                 </a>
             </Card.Content>
         </Card>
-          <Card fluid color="orange"as={Link} to="/note/2">
+          <Card fluid color="orange"as={Link} to="/note/NeedFeedback">
               <Card.Content header="Bubble sort by John"/>
               <Card.Content extra>
                   <a>
@@ -54,7 +54,7 @@ export function Course() {
                   </a>
               </Card.Content>
           </Card>
-        <Card fluid color="yellow"as={Link} to="/note/3">
+        <Card fluid color="yellow"as={Link} to="/note/NeedFeedback">
             <Card.Content header="Master sort by John"/>
             <Card.Content extra>
                 <a>
@@ -77,9 +77,14 @@ export function Course() {
             content="Add Note"
           />
         </div>
-
+        <Message>
+            <Message.Header>Mandatory Feedback!!</Message.Header>
+            <p>
+                You need <b>1</b> more mandatory feedback to access other student's note.
+            </p>
+        </Message>
     </div>
   );
 }
 
-export default Course;
+export default NoCourse;
