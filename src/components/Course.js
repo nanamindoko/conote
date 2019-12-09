@@ -7,6 +7,7 @@ import { Button, Header, Rating } from "semantic-ui-react";
 export function Course() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();
+  var allowed = true;
   // const db = firebase.firestore();
   // // db.collection("courses")
   // //   .get()
@@ -17,13 +18,56 @@ export function Course() {
   // //     this.setCourses({ courses: courses });
   // //   });
   // // console.log(courses);
+
   return (
     <div className="Courses">
       <h1>{id}</h1>
       <Card.Group>
-        <Card as={Link} to="/note/1" fluid color="red" header="Quick sort by John" />
-        <Card as={Link} to="/note/2" fluid color="orange" header="Bubble sort  by John" />
-        <Card as={Link} to="/note/3" fluid color="yellow" header="Master's theorem by Paul" />
+        <Card fluid color="red"as={Link} to="/note/1">
+            <Card.Content header="Quick sort by John"/>
+            <Card.Content extra>
+                <a>
+          <Rating
+              icon="star"
+              size="huge"
+              defaultRating={3}
+              maxRating={5}
+              disabled
+          />
+                    rated by 8 people
+                </a>
+            </Card.Content>
+        </Card>
+          <Card fluid color="orange"as={Link} to="/note/2">
+              <Card.Content header="Bubble sort by John"/>
+              <Card.Content extra>
+                  <a>
+                  <Rating
+                      icon="star"
+                      size="huge"
+                      defaultRating={2}
+                      maxRating={5}
+                      disabled
+                  />
+                   rated by 10 people
+                  </a>
+              </Card.Content>
+          </Card>
+        <Card fluid color="yellow"as={Link} to="/note/3">
+            <Card.Content header="Master sort by John"/>
+            <Card.Content extra>
+                <a>
+                <Rating
+                    icon="star"
+                    size="huge"
+                    defaultRating={3.5}
+                    maxRating={5}
+                    disabled
+                />
+                    rated by 2 people
+                </a>
+            </Card.Content>
+        </Card>
       </Card.Group>
       <div>
           <Button

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Editor from "@stfy/react-editor.js";
 import { EDITOR_JS_TOOLS } from "../editor-tools";
 import { Button, Header, Rating } from "semantic-ui-react";
+import {Link} from "react-router-dom";
 
 export class WriteFeedback extends Component {
   state = {
@@ -42,6 +43,7 @@ export class WriteFeedback extends Component {
         />
         <div>
           <Button
+              as={Link} to="/course/1"
             attached="bottom"
             content="Submit"
             onClick={() => console.log(this.state)}
