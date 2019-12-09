@@ -20,12 +20,16 @@ export function NoCourse() {
   // //   });
   // // console.log(courses);
   var name = "";
+  var feedbacklink = "";
   if (id == 1){
     name = "Data Structure";
+      feedbacklink = "/note/NeedFeedback1"
   }else if (id == 2){
     name = "System Programming";
+      feedbacklink = "/note/NeedFeedback2"
   }else if (id == 3){
     name = "General Chemistry";
+      feedbacklink = "/note/NeedFeedback3"
   }
 
   return (
@@ -33,13 +37,13 @@ export function NoCourse() {
     <div className="NoCourses">
       <h1>{name}</h1>
       <Card.Group>
-        <Card fluid color="red"as={Link} to="/note/NeedFeedback">
+        <Card fluid color="red"as={Link} to={feedbacklink}>
             <Card.Content header="This note needs your FEEDBACK! #1"/>
         </Card>
-          <Card fluid color="red"as={Link} to="/note/NeedFeedback">
+          <Card fluid color="red"as={Link} to={feedbacklink}>
               <Card.Content header="This note needs your FEEDBACK! #2"/>
           </Card>
-          <Card fluid color="red"as={Link} to="/note/NeedFeedback">
+          <Card fluid color="red"as={Link} to={feedbacklink}>
               <Card.Content header="This note needs your FEEDBACK! #3"/>
           </Card>
 

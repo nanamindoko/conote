@@ -65,12 +65,27 @@ export function Note() {
     note_content = "Lecture 14 : Chemical Equilibrium";
     second_cont = "Equilibrium State -> the rate of forward reaction and backward reaction is equal\nWhen the reaction became equilibrium, there is no macroscopic evidence of change\nAlso, the equilibrium state is reached by spontaneous processes\nThis process is regardless of direction of approach";
     third_cont = "Principle of Le Chatelier \n-> A system in equilibrium that is subject to a stress will react in a way that tends to counteract the stress\nIt is used to predict the behavior of a system due to changes in pressure, temperature, or concentration. \nChanging the Concentration of a reactant : increasing the concentration of reactants will drive the reaction to the right. \nChanging the Concentration of a product : increasing the concentration of products will drive the reaction to the left. \nChanging the volume of pressure : when the volume decreases or the pressure increases, the equilibrium will shift to favor the side the reaction that involes fewer moles of gas.";
-  }
-  else{
-    title = "Equilibrium by Hyungbin";
+  }  else if (id =="NeedFeedback1"){
+    title = "Equilibrium by Hyudddngbin";
     note_content = "Lecture 14 : Chemical Equilibrium";
     second_cont = "Equilibrium State -> the rate of forward reaction and backward reaction is equal\nWhen the reaction became equilibrium, there is no macroscopic evidence of change\nAlso, the equilibrium state is reached by spontaneous processes\nThis process is regardless of direction of approach";
     third_cont = "Principle of Le Chatelier \n-> A system in equilibrium that is subject to a stress will react in a way that tends to counteract the stress\nIt is used to predict the behavior of a system due to changes in pressure, temperature, or concentration. \nChanging the Concentration of a reactant : increasing the concentration of reactants will drive the reaction to the right. \nChanging the Concentration of a product : increasing the concentration of products will drive the reaction to the left. \nChanging the volume of pressure : when the volume decreases or the pressure increases, the equilibrium will shift to favor the side the reaction that involes fewer moles of gas.";
+  }else if (id =="NeedFeedback2"){
+    title = " by ";
+    note_content = "Lecture 14 : Chemical Equilibrium";
+    second_cont = "Equilibrium State -> the rate of forward reaction and backward reaction is equal\nWhen the reaction became equilibrium, there is no macroscopic evidence of change\nAlso, the equilibrium state is reached by spontaneous processes\nThis process is regardless of direction of approach";
+    third_cont = "Principle of Le Chatelier \n-> A system in equilibrium that is subject to a stress will react in a way that tends to counteract the stress\nIt is used to predict the behavior of a system due to changes in pressure, temperature, or concentration. \nChanging the Concentration of a reactant : increasing the concentration of reactants will drive the reaction to the right. \nChanging the Concentration of a product : increasing the concentration of products will drive the reaction to the left. \nChanging the volume of pressure : when the volume decreases or the pressure increases, the equilibrium will shift to favor the side the reaction that involes fewer moles of gas.";
+  }else if (id =="NeedFeedback3"){
+    title = " by Hyudddngbin";
+    note_content = "Lecture 14 : Chemical Equilibrium";
+    second_cont = "Equilibrium State -> the rate of forward reaction and backward reaction is equal\nWhen the reaction became equilibrium, there is no macroscopic evidence of change\nAlso, the equilibrium state is reached by spontaneous processes\nThis process is regardless of direction of approach";
+    third_cont = "Principle of Le Chatelier \n-> A system in equilibrium that is subject to a stress will react in a way that tends to counteract the stress\nIt is used to predict the behavior of a system due to changes in pressure, temperature, or concentration. \nChanging the Concentration of a reactant : increasing the concentration of reactants will drive the reaction to the right. \nChanging the Concentration of a product : increasing the concentration of products will drive the reaction to the left. \nChanging the volume of pressure : when the volume decreases or the pressure increases, the equilibrium will shift to favor the side the reaction that involes fewer moles of gas.";
+  }
+  else{
+    title = "";
+    note_content = "";
+    second_cont = "";
+    third_cont = "";
   }
   return (
     <div>
