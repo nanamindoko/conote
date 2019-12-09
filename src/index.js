@@ -15,7 +15,7 @@ import {Course, Note} from "./components";
 import NoteTaking from "./components/NoteTaking";
 import MyNote from "./components/MyNote";
 import NoCourse from "./components/NoCourse";
-global.feedbacked= false;
+global.courses = [{id:1,name:'Data structure',date:'2019/11/20',state:'nocourse'},{id:2,name:'System programming',date:'2019/12/02',state:'nocourse'},{id:3,name:'General Chemistry',date:'2019/11/10',state:'nocourse'}];
 
 const store = createStore(reducers, applyMiddleware(thunk));
 ReactDOM.render(

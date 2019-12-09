@@ -7,7 +7,7 @@ import {Message, Button, Header, Rating } from "semantic-ui-react";
 export function Course() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();
-  global.feedbacked= true;
+  global.courses[id-1].state = 'course'
   global.lastcourse = id;
   let cardg;
   var name;
