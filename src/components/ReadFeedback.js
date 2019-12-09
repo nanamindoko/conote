@@ -44,7 +44,7 @@ export class ReadFeedback extends Component {
                       {
                           type: "paragraph",
                           data: {
-                              text: "It is a bad summary I think. You have to re write whole of it I think..."
+                              text: "I think your note has no contents. It is not appropriate note taking for other users.\n I think you have to write all again"
                           }
                       }
                   ],
@@ -62,7 +62,7 @@ export class ReadFeedback extends Component {
                       {
                           type: "paragraph",
                           data: {
-                              text: "I'm not sure"
+                              text: "This note is so simple that I cannot get useful lecture contents from this note. Please write more detailed concepts"
                           }
                       }
                   ],
