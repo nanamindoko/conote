@@ -26,9 +26,9 @@ export function Note() {
     third_cont = "Its time complexity is O(nlogn)";
   }  
   else if (id == 4){
-    note_content = "";
-    second_cont = "";
-    third_cont = "";
+    note_content = "Red Black Tree\n - It is a kind of self-balancing binary search tree in computer science.\n Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or block) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions.";
+    second_cont = "<Properties>\n 1. Each node is either red or black.\n - The root is black. This rule is sometimes omitted. Since the root can always be changed from red to black, but not necessarily vice versa, this rule has little effect on analysis.\n 3. All leaves (NIL) are black\n 4. If a node is red, then both its children are black.\n 5. Every path from a given node to any of its descendant NIL nodes contains the same number of black nodes. ";
+    third_cont = "Although insert and delete operation are complicated, their times remain O(log n)";
   }
   else if (id == 5){
     note_content = "";
@@ -36,6 +36,11 @@ export function Note() {
     third_cont = "";
   }
   else if (id == 6){
+    note_content = "";
+    second_cont = "";
+    third_cont = "";
+  }
+  else{
     note_content = "";
     second_cont = "";
     third_cont = "";
