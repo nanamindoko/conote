@@ -6,6 +6,12 @@ import { WriteFeedback } from "./WriteFeedback";
 import {Button, Header} from "semantic-ui-react";
 
 function NoteTaking() {
+    let url;
+    if(global.feedbacked){
+        url ="/course/"+global.lastcourse;
+    }else{
+        url = "/nocourse/"+global.lastcourse;
+    }
   return (
     <div className='NoteTaking'>
       <h1>Write what you learned</h1>
@@ -38,7 +44,7 @@ function NoteTaking() {
           }}
         />
         <Button
-            as={Link} to="/course/1"
+            as={Link} to={url}
             attached="bottom"
             content="Submit"
         />
