@@ -5,4 +5,4 @@ import NoteTaking from "./NoteTaking";
 import WriteFeedback from "./WriteFeedback";
 import Navbar from "./Navbar";
 
-export { Course, Authentication, Note, NoteTaking, WriteFeedback, Navbar }
+export { Course, Authentication, Note, NoteTaking, WriteFeedback, Navbar, Sample }
