@@ -1,9 +1,9 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import Editor from "@stfy/react-editor.js";
 import { EDITOR_JS_TOOLS } from "../editor-tools";
 import { WriteFeedback } from "./WriteFeedback";
-import { Header } from "semantic-ui-react";
+import {Button, Header} from "semantic-ui-react";
 import ReadFeedback from "./ReadFeedback";
 
 export function MyNote() {
@@ -84,9 +84,15 @@ export function MyNote() {
             version: "2.15.0"
           }}
         />
+
+        <Button
+            attached="bottom"
+            content="Save Note"
+        />
       </div>
       <ReadFeedback id={id} />
     </div>
+
   );
 }
 
