@@ -33,7 +33,7 @@ export class ReadFeedback extends Component {
                   version: "2.15.0"
               }}
           />
-      }else if (id === "2"){
+      }else if (id === "2"){    
           editor =   <Editor
               tools={EDITOR_JS_TOOLS}
               onReady={() => console.log("Start Editor 2!")}
