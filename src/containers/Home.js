@@ -1,6 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
+import MyPage from './MyPage';
 import { Button, Card, Header, Label } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import { Write } from '../components';
 import firebase from "../firebase";
 
 export class Home extends React.Component {
@@ -11,6 +14,8 @@ export class Home extends React.Component {
       notes: []
     };
   }
+
+  /*
   componentDidMount() {
     const courses = [];
     const db = firebase.firestore();
@@ -22,9 +27,11 @@ export class Home extends React.Component {
         });
         //this.setState({ courses: courses });
       });
-  }
+  }*/
+
   render() {
-    //const courses = this.state.courses;
+      //const courses = this.state.courses;
+      /*
       const courses = global.courses;
 
       let cardg;
@@ -128,7 +135,25 @@ export class Home extends React.Component {
         </div>
       </div>
     );
+  */
+
+      let defaultPage = (
+          <div className="row">
+              Welcome to CoNote
+          </div>
+      )
+      return (
+          <div className="container">
+              {this.props.isLoggedIn ? <MyPage /> : defaultPage}
+          </div>
+      );
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+    return {
+        isLoggedIn : state.authentication.status.isLoggedIn
+    }
+}
+
+export default connect(mapStateToProps)(Home);

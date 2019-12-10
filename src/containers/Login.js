@@ -28,7 +28,7 @@ class Login extends React.Component {
                     toast.success("Welcome, " + id + "!", {
                         position: toast.POSITION.BOTTOM_CENTER
                     })
-                    history.push('/');
+                    this.props.history.push('/');
 
                     return true;
                 } else {

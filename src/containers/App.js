@@ -77,7 +77,11 @@ class App extends React.Component {
         return (
             <div>
                 <Navbar isLoggedIn={this.props.status.isLoggedIn} onLogout={this.handleLogout}/>
-                {this.props.children}
+                <div className="container">
+                    <div className="row">
+                        {this.props.children}
+                    </div>
+                </div>
             </div>
         );
     }

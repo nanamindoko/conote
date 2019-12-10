@@ -18,7 +18,7 @@ class Register extends React.Component {
                     toast.success('Success! Please log in.', {
                         position: toast.POSITION.BOTTOM_CENTER
                     });
-                    history.push('/login');
+                    this.props.history.push('/login');
                     return true;
                 } else {
                     /*

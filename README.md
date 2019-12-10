@@ -39,7 +39,7 @@ It contains 'index.html', which is the index page of Conote. It also conatins 'B
 
 #### src
 
-It contains 'index.js' and 'index.css'. This loads 'App.js' and 'App.css', which is the router of Conote. In '/components', javascript code of each page('Course.js', 'Home.js', 'Note.js','Notetaking.js') exists.
+It contains 'index.js' and 'index.css'. This loads 'App.js' and 'App.css', which is the router of Conote. In '/components', javascript code of each page('Course.js', 'Home.js','Notetaking.js') exists.
 
 
 ### Pages

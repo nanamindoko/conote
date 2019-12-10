@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {App, Home, Login, Register} from './containers';
+import {App, Home, Login, Register, MyPage, NoteView} from './containers';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import * as serviceWorker from './serviceWorker';
 import history from './history';
@@ -12,7 +12,7 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers';
 import thunk from 'redux-thunk';
 import {Course, Note} from "./components";
-import NoteTaking from "./components/NoteTaking";
+import Write from "./components/Write";
 import MyNote from "./components/MyNote";
 import NoCourse from "./components/NoCourse";
 global.courses = [{id:1,name:'Data structure',date:'2019/11/20',state:'nocourse'},{id:2,name:'System programming',date:'2019/12/02',state:'nocourse'},{id:3,name:'General Chemistry',date:'2019/11/10',state:'nocourse'}];
@@ -46,10 +46,13 @@ ReactDOM.render(
                     <Note />
                 </Route>
                 <Route path="/write">
-                    <NoteTaking />
+                    <Write />
                 </Route>
                 <Route path="/mynote/:id">
                     <MyNote />
+                </Route>
+                <Route path="/mypage">
+                    <MyPage />
                 </Route>
             </Switch>
         </Router>

@@ -4,6 +4,8 @@ const Schema = mongoose.Schema
 
 const Course = new Schema({
     master : String,
+    instructor : String,
+    code : String,
     starred : [String],
     members : [String],
     date : {

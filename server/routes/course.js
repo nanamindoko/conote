@@ -18,11 +18,13 @@ router.post('/', (req, res) => {
         })
     }
 
+    console.log(req.body.contents);
     let course = new Course({
         master : req.session.loginInfo.username,
         //members
         contents: req.body.contents
     });
+
 
     course.save( err => {
         if(err) throw err;

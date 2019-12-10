@@ -66,42 +66,45 @@ class Authentication extends React.Component {
 
         const inputBoxes = (
             <div>
-                <label>Username</label>
-                <input
-                    name="username"
-                    type="text"
-                    className="validate"
-                    onChange={this.handleChange}
-                    value={this.state.username}/>
+                <div className="form-group">
+                    <label>Username</label>
+                    <input
+                        name="username"
+                        type="text"
+                        className="validate"
+                        onChange={this.handleChange}
+                        value={this.state.username}/>
+                </div>
 
-                <label>Password</label>
-                <input
-                    name="password"
-                    type="password"
-                    className="validate"
-                    onChange={this.handleChange}
-                    value={this.state.password}
-                    onKeyPress={this.handleKeyPressfON}/>
+                <div className="form-group">
+                    <label>Password</label>
+                    <input
+                        name="password"
+                        type="password"
+                        className="validate"
+                        onChange={this.handleChange}
+                        value={this.state.password}
+                        onKeyPress={this.handleKeyPress}/>
+                </div>
             </div>
         );
 
         const loginView = (
           <div>
               {inputBoxes}
-              <button className="btn" onClick={this.handleLogin}>SUBMIT</button>
+              <button className="btn btn-primary" type="button" onClick={this.handleLogin}>SUBMIT</button>
           </div>
         );
 
         const registerView = (
           <div>
               {inputBoxes}
-              <button className="btn" onClick={this.handleRegister}>CREATE ACCOUNT</button>
+              <button className="btn btn-primary" type="button" onClick={this.handleRegister}>CREATE ACCOUNT</button>
           </div>
         );
 
         return (
             <div className="container auth">
-                {this.props.mode ? "LOGIN" : "REGISTER"}
                 {this.props.mode ? loginView : registerView}
             </div>
         );

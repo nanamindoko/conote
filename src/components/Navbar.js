@@ -18,7 +18,7 @@ export class Navbar extends Component {
             active={activeItem === "mypage"}
             onClick={this.handleItemClick}
             as={Link}
-            to="/"
+            to="/mypage"
         >
           My Page
         </Menu.Item>
@@ -57,7 +57,7 @@ export class Navbar extends Component {
 
       return (
           <Menu>
-              {this.props.isLoggedIn ? myPageButton : myPageButton}
+              {this.props.isLoggedIn ? myPageButton : undefined}
               <Menu.Menu position={"right"}>
                   {this.props.isLoggedIn ? logoutButton : loginButton}
                   {this.props.isLoggedIn ? undefined : registerButton}
