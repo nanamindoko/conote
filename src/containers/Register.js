@@ -16,9 +16,9 @@ class Register extends React.Component {
             () => {
                 if(this.props.status === "SUCCESS") {
                     toast.success('Success! Please log in.', {
-                        position: toast.POSITION.BOTTOM_CENTER
+                        containerId: "result"
                     });
-                    this.props.history.push('/login');
+                    window.location.href = "/login";
                     return true;
                 } else {
                     /*
@@ -35,7 +35,7 @@ class Register extends React.Component {
 
                     //let toastContent = $('<span style="color: #FFB4BA">' + errorMessage[this.props.errorCode - 1] + '</span>');
                     toast.error("Register error, please try again", {
-                        position: toast.POSITION.BOTTOM_CENTER
+                        containerId: "result"
                     });
                     return false;
                 }

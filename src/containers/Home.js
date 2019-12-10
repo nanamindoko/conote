@@ -138,12 +138,15 @@ export class Home extends React.Component {
   */
 
       let defaultPage = (
-          <div className="row">
-              <h2>Welcome to CoNote</h2>
+          <div className="container">
+              <div className="row">
+                <h2>Welcome to CoNote</h2>
+              </div>
           </div>
       )
+
       return (
-          <div className="container">
+          <div>
               {this.props.isLoggedIn ? <MyPage /> : defaultPage}
           </div>
       );

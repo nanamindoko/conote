@@ -121,11 +121,11 @@ class MyPage extends React.Component {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-5">
                         <div className="row">
                             <h2>My Courses</h2>
                         </div>
-                        <div className="row">
+                        <div className="row my-4">
                             <button type="button" className="btn btn-primary" onClick={this.openModal}>New Course</button>
                         </div>
                         <NewCourse isOpen={this.state.isModalOpen} close={this.closeModal} onPost={this.handlePost}  />
@@ -133,7 +133,7 @@ class MyPage extends React.Component {
                             {courseList}
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-5 offset-2">
                         <div className="row">
                             <h2>My Notes</h2>
                         </div>

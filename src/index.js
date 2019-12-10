@@ -5,7 +5,7 @@ import {App, Home, Login, Register, MyPage, NoteView} from './containers';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import * as serviceWorker from './serviceWorker';
 import history from './history';
-
+import "./index.css"
 // Redux
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -41,7 +41,6 @@ ReactDOM.render(
                 <Route path="/nocourse/:id">
                     <NoCourse />
                 </Route>
-
                 <Route path="/note/:id">
                     <Note />
                 </Route>

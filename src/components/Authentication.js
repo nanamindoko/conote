@@ -1,5 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
+import {toast, ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 class Authentication extends React.Component {
 
@@ -92,7 +94,7 @@ class Authentication extends React.Component {
         );
 
         const loginView = (
-          <div className="col">
+          <div className="col-4 offset-4">
               <h2>Sign In</h2>
               {inputBoxes}
               <button className="btn btn-primary" type="button" onClick={this.handleLogin}>SUBMIT</button>
@@ -100,17 +102,20 @@ class Authentication extends React.Component {
         );
 
         const registerView = (
-          <div className="col">
+          <div className="col-4 offset-4">
               <h2>Register</h2>
               {inputBoxes}
-              <button className="btn btn-primary" type="button" onClick={this.handleRegister}>CREATE ACCOUNT</button>
+              <button className="btn btn-success" type="button" onClick={this.handleRegister}>CREATE ACCOUNT</button>
           </div>
         );
 
         return (
-            <div className="container auth">
-                <div className="row">
-                    {this.props.mode ? loginView : registerView}
+            <div>
+                <ToastContainer containerId={'result'}  position={toast.POSITION.TOP_RIGHT} />
+                <div className="container auth">
+                    <div className="row">
+                        {this.props.mode ? loginView : registerView}
+                    </div>
                 </div>
             </div>
         );

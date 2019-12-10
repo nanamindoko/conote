@@ -4,6 +4,7 @@ import { Card } from "semantic-ui-react";
 import firebase from "../firebase";
 import {Message, Button, Header, Rating } from "semantic-ui-react";
 
+
 export function Course() {
   const [courses, setCourses] = useState(0);
   const { id } = useParams();

@@ -5,6 +5,7 @@ import { loginRequest } from '../actions/authentication';
 import history from '../history';
 import {toast} from 'react-toastify'
 
+
 class Login extends React.Component {
 
     constructor(props) {
@@ -26,9 +27,10 @@ class Login extends React.Component {
 
                     //Materialize.toast('Welcome, ' + id + '!', 2000);
                     toast.success("Welcome, " + id + "!", {
-                        position: toast.POSITION.BOTTOM_CENTER
+                        position: toast.POSITION.TOP_RIGHT,
+                        containerId: "result"
                     })
-                    this.props.history.push('/');
+                    window.location.href = "/";
 
                     return true;
                 } else {
@@ -37,7 +39,8 @@ class Login extends React.Component {
                     Materialize.toast($toastContent, 2000);
                      */
                     toast.error("Login failed!", {
-                        position: toast.POSITION.BOTTOM_CENTER
+                        position: toast.POSITION.BOTTOM_CENTER,
+                        containerId: "result"
                     })
                     return false;
                 }
