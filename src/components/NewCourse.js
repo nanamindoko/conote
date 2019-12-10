@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
-import Write from "./Write";
-
 
 /* Modal for new course */
 class NewCourse extends React.Component {
@@ -13,31 +11,18 @@ class NewCourse extends React.Component {
         this.state = {
             name: '',
             code: '',
-            prof: '',
-        };
+            prof: ''
+        }
 
-        this.handleNameChange = this.handleNameChange.bind(this);
-        this.handleCodeChange = this.handleCodeChange.bind(this);
-        this.handleProfChange = this.handleProfChange.bind(this);
+        this.handleChange = this.handleChange.bind(this);
         this.handlePost = this.handlePost.bind(this);
     }
 
-    handleNameChange(e) {
+    handleChange(e) {
         this.setState({
-            name: e.target.value
+            ...this.state,
+            [e.target.name] : e.target.value
         });
-    }
-
-    handleCodeChange(e) {
-        this.setState({
-            code: e.target.value
-        });
-    }
-
-    handleProfChange(e) {
-        this.setState({
-            prof: e.target.value
-        })
     }
 
     handlePost() {
@@ -51,7 +36,6 @@ class NewCourse extends React.Component {
                         code: '',
                         prof: '',
                     });
-                    this.props.close();
                 }
 
             }
@@ -83,15 +67,15 @@ class NewCourse extends React.Component {
                     <h2>Create new course</h2>
                     <div className="form-group">
                         <label htmlFor="name">Course Name:</label>
-                        <input type="text" className="form-control" id="usr" value={this.state.name} onChange={this.handleNameChange}/>
+                        <input type="text" className="form-control" name="name" id="usr" value={this.state.name} onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="code">Course Code:</label>
-                        <input type="text" className="form-control" id="code" value={this.state.code} onChange={this.handleCodeChange}/>
+                        <input type="text" className="form-control" name="code" id="code" value={this.state.code} onChange={this.handleChange}/>
                     </div>
                     <div className="form-group">
                         <label htmlFor="prof">Instructor:</label>
-                        <input type="password" className="form-control" id="prof" value={this.state.prof} onChange={this.handleProfChange}/>
+                        <input type="password" className="form-control" name="prof" id="prof" value={this.state.prof} onChange={this.handleChange}/>
                     </div>
 
                     <button type="button" class="btn btn-primary" onClick={this.props.onPost}>Create</button>

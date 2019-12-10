@@ -27,6 +27,7 @@ class MyPage extends React.Component {
                 if(this.props.postStatus.status === "SUCCESS") {
                     //toast
                     console.log("SUCCESS")
+                    this.closeModal();
                 } else {
                     //toast
                     console.log("FAILED POSTING")
@@ -121,14 +122,24 @@ class MyPage extends React.Component {
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-                        My Courses
-                        {courseList}
-                        <button type="button" className="btn btn-primary" onClick={this.openModal}>New Course</button>
+                        <div className="row">
+                            <h2>My Courses</h2>
+                        </div>
+                        <div className="row">
+                            <button type="button" className="btn btn-primary" onClick={this.openModal}>New Course</button>
+                        </div>
                         <NewCourse isOpen={this.state.isModalOpen} close={this.closeModal} onPost={this.handlePost}  />
+                        <div className="row">
+                            {courseList}
+                        </div>
                     </div>
                     <div className="col-6">
-                        My Notes
-                        {noteList}
+                        <div className="row">
+                            <h2>My Notes</h2>
+                        </div>
+                        <div className="row">
+                            {noteList}
+                        </div>
                     </div>
                 </div>
             </div>

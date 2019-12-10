@@ -67,21 +67,23 @@ class Authentication extends React.Component {
         const inputBoxes = (
             <div>
                 <div className="form-group">
-                    <label>Username</label>
+                    <label for="usr">Username</label>
                     <input
                         name="username"
                         type="text"
-                        className="validate"
+                        className="validate form-control"
+                        id="usr"
                         onChange={this.handleChange}
                         value={this.state.username}/>
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label for="pwd">Password</label>
                     <input
                         name="password"
                         type="password"
-                        className="validate"
+                        className="validate form-control"
+                        id="pwd"
                         onChange={this.handleChange}
                         value={this.state.password}
                         onKeyPress={this.handleKeyPress}/>
@@ -90,14 +92,16 @@ class Authentication extends React.Component {
         );
 
         const loginView = (
-          <div>
+          <div className="col">
+              <h2>Sign In</h2>
               {inputBoxes}
               <button className="btn btn-primary" type="button" onClick={this.handleLogin}>SUBMIT</button>
           </div>
         );
 
         const registerView = (
-          <div>
+          <div className="col">
+              <h2>Register</h2>
               {inputBoxes}
               <button className="btn btn-primary" type="button" onClick={this.handleRegister}>CREATE ACCOUNT</button>
           </div>
@@ -105,7 +109,9 @@ class Authentication extends React.Component {
 
         return (
             <div className="container auth">
-                {this.props.mode ? loginView : registerView}
+                <div className="row">
+                    {this.props.mode ? loginView : registerView}
+                </div>
             </div>
         );
     }

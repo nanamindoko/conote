@@ -139,7 +139,7 @@ export class Home extends React.Component {
 
       let defaultPage = (
           <div className="row">
-              Welcome to CoNote
+              <h2>Welcome to CoNote</h2>
           </div>
       )
       return (
