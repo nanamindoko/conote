@@ -32,15 +32,15 @@ This is screenshot of our interface after you write a mandatory feedback.
   
 &nbsp;&nbsp;&nbsp;&nbsp;Total 16 users participated in our prototype usertest. We could get some more positive reactions than we expected from users about the idea of platform where people share their notes. We could know that interaction between existing notes and feedback to those notes is easy to improve, but make users to upload their own notes voluntarily first is not an easy process.   
 &nbsp;&nbsp;&nbsp;&nbsp;In the point of note referring other users note, most users considered it highly necessary, and some users even said they actually want to use the service if this note sharing service gets launched. However, the users considered the function simply sharing notes is not very unique function, because there are some sharing platforms such as google drive. In addition, some of them commented that they can not be sure that other users would use this platform and voluntarily upload their own notes first. However, they said that a  mandatory feedback system is a very good idea to control some free riders, and some users said that mandatory note uploading system would be better solution for preventing free riders rather than mandatory feedback system.   
-<img src="/image/5.png" width="450"><img src="/image/6.png" width="450">  
+<div><img src="/image/5.png" width="450"><img src="/image/6.png" width="450"></div>  
   
 &nbsp;&nbsp;&nbsp;&nbsp;In the note uploading task, there were much feedback about user interface. Many users wanted easier, and more convenient editor, which can edit mathematical formula and draw pictures. Especially, they wanted some linkage systems with other drawing or imaging programs, such as ChemDraw.  There was an opinion that commenting function directly in the note(not only in feedback page), like ‘Notion’ will be very good feature to use for the CoNote system. Some users even get confused about how they can upload own notes. One of the problems was that even though there were some functions that users wanted, users could not easily know that the function exists. For instance, users can upload photos in using the editor of CoNote, but there was some feedback that they need photo uploading function, which means our user interface is not  very intuitive and easy. Some users suggested inserting some explanations on user interfaces or providing a simple tutorial would be good for new CoNote users.  
-<img src="/image/7.png" width="450"><img src="/image/8.png" width="450">  
+<div><img src="/image/7.png" width="450"><img src="/image/8.png" width="450"></div>  
 <img src="/image/9.png">  
   
 &nbsp;&nbsp;&nbsp;&nbsp;The feedback system, which was a third task, got the best reaction from the users and positive feedback. Many users said that the system that users can refer other notes and give feedback to the notes is the best feature of CoNote. It can be a strong feature for the platform in the point that users can use this system not only for opinion, but asking questions, and answer the questions also. With the mandatory feedback system, this feature got very positive reaction from users. However, there were also feedback about UI. One especially remarkable feedback was that applying google docs’ ‘suggestion’ function. Not only giving feedback on the feedback board, but also directly input the feedback on the note will be better feature for the CoNote. To improve social interaction between users, the idea of rating feedback and sorting the list of feedback using filter was also a good idea.  
-<img src="/image/10.png" width="450"><img src="/image/11.png" width="450">  
-<img src="/image/12.png" width="450"><img src="/image/13.png" width="450">  
+<div><img src="/image/10.png" width="450"><img src="/image/11.png" width="450"></div>  
+<div><img src="/image/12.png" width="450"><img src="/image/13.png" width="450"></div>  
   
 
 ---
@@ -54,13 +54,15 @@ This is screenshot of our interface after you write a mandatory feedback.
 
 ---
 ## Individual Reflections
- - `Jinyoung`
+ - `Jinyoung`  
 
- - `Sangwoo`
+
+ - `Sangwoo`  
  &nbsp;&nbsp;&nbsp;&nbsp;Brainstorming was one thing worked successfully in our team. Whenever we meet for project, we usually got into good and novel idea. This process was good until low-fi prototype. After low-fi prototype feedback, there are two things that went wrong. First, we got a bad score, way behind average, and that discouraged us a bit. It is true that our plan had some flaws, we felt that either grading is harsh or our idea is bad. Second, our communication within team was ruined. We try to balance our work, but actual development was eventually done by only part of the member. We didn’t know that when front-end developer resigned to develop it until two weeks after resignation. We tried to amend problems right before the final presentation, but it was not enough to finish our interface. Next time, I would like to make sure that every member is in contact and finish our work with greater perfectionism.  
 &nbsp;&nbsp;&nbsp;&nbsp;Through project, I learned that web-based GUI implementation is hard to modularized if there is no  standard among members. I think one expert member should set all standard and some base code so that a novice member can contribute more. And I also learned that improving the social computing design is to find weakness of design and to fix it. Through design process, we found new weakness of system every time we made a meeting. Next time, I would balance the time working on designing and time working on implementation.
 
 
- - `Jiwoong`
+ - `Jiwoong`  
+
 
  - `Dorjnyam`
