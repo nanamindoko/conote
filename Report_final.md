@@ -57,6 +57,8 @@ This is screenshot of our interface after you write a mandatory feedback.
   
 ## Individual Reflections
  - `Jinyoung`  
+&nbsp;&nbsp;&nbsp;&nbsp;During several feedback meetings, we have got valuable feedback from professor and TAs, and gained some insights for our project. There were great and small changes for our plan after every meeting and prototype submissions, so the final plan was totally different from the initial plan, and we had way more things to implement, which we did not expect. Even the teammate who was in charge of front-end suddenly became out of touch without any notice, so the rest of the teammates had a hard time studying React library and his code. I think our schedule was too loose, and maybe in the next team project, I would make it more tight so that we can change our plan freely and prepare unforeseen obstacles. In addition, I would decide some rules and stuffs like coding conventions before just diving into implementation.  
+&nbsp;&nbsp;&nbsp;&nbsp;The hardest part of the  was that not all users use the app as the way we intended. For the most of the time, we discussed how to design the GUI to induce social interaction. During high-fi prototype, we got some feedback from our friends, and realized discussing directly with the users is way more efficient. I learned that interaction between the developers and the users is as important as interaction between users.  
 
 
  - `Sangwoo`  
@@ -76,4 +78,3 @@ This is screenshot of our interface after you write a mandatory feedback.
  
 
 ## Video Link
-https://youtu.be/Je0OGS3iDT0
