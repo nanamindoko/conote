@@ -25,7 +25,7 @@ This is screenshot of our interface after you write a mandatory feedback.
 <img src="/image/4.png" width="450" height="350">
 *This is a screenshot of what our note editor can do, including text effects, table, lists and code.  
    
-   
+
 &nbsp;&nbsp;&nbsp;&nbsp;Our note editor is a well-received features of Conote. Using our editor UI, user can write lecture note easily. According to user survey, note UI helps their task to fill in and upload lecture notes. Some users left comments that they wish our UI support chemdraw, which is chemical molecule drawer, and math expression.
     
   
@@ -71,3 +71,9 @@ This is screenshot of our interface after you write a mandatory feedback.
 
 
  - `Dorjnyam`
+
+
+ 
+
+## Video Link
+https://youtu.be/Je0OGS3iDT0
