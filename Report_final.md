@@ -1,7 +1,7 @@
 # CoNote : Final Report
 
----
-
+  
+  
 ## Quality Argument
 There are some great features in our interface and we will explain why it is great. These are Mandatory Feedback and the note editor.
 
@@ -27,7 +27,8 @@ This is screenshot of our interface after you write a mandatory feedback.
   
 &nbsp;&nbsp;&nbsp;&nbsp;Our note editor is a well-received features of Conote. Using our editor UI, user can write lecture note easily. According to user survey, note UI helps their task to fill in and upload lecture notes. Some users left comments that they wish our UI support chemdraw, which is chemical molecule drawer, and math expression.
     
----
+  
+    
 ## Evaluation
   
 &nbsp;&nbsp;&nbsp;&nbsp;Total 16 users participated in our prototype usertest. We could get some more positive reactions than we expected from users about the idea of platform where people share their notes. We could know that interaction between existing notes and feedback to those notes is easy to improve, but make users to upload their own notes voluntarily first is not an easy process.   
@@ -41,9 +42,9 @@ This is screenshot of our interface after you write a mandatory feedback.
 &nbsp;&nbsp;&nbsp;&nbsp;The feedback system, which was a third task, got the best reaction from the users and positive feedback. Many users said that the system that users can refer other notes and give feedback to the notes is the best feature of CoNote. It can be a strong feature for the platform in the point that users can use this system not only for opinion, but asking questions, and answer the questions also. With the mandatory feedback system, this feature got very positive reaction from users. However, there were also feedback about UI. One especially remarkable feedback was that applying google docs’ ‘suggestion’ function. Not only giving feedback on the feedback board, but also directly input the feedback on the note will be better feature for the CoNote. To improve social interaction between users, the idea of rating feedback and sorting the list of feedback using filter was also a good idea.  
 <div><img src="/image/10.png" width="400"><img src="/image/11.png" width="400"></div>  
 <div><img src="/image/12.png" width="400"><img src="/image/13.png" width="400"></div>  
+    
   
-
----
+  
 ## Discussion
   
 &nbsp;&nbsp;&nbsp;&nbsp;Among the concepts from class, concepts that are most relevant to our interface are ‘peer production’, ‘quality control’ and ‘discussion/Q&A’.  
@@ -52,7 +53,7 @@ This is screenshot of our interface after you write a mandatory feedback.
 &nbsp;&nbsp;&nbsp;&nbsp;Our system has a similar function to Q&A service. From user survey, we found out this function would work mostly well. From users, we got a suggestion that there should be a written guideline for what to feedback on student’s note. If this improvement is done, it would be supporting social interaction (Q&A) more successfully.  
   
 
----
+  
 ## Individual Reflections
  - `Jinyoung`  
 
